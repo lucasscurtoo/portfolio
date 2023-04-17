@@ -56,7 +56,7 @@ const Projects = () => {
 
       <div
         ref={scrollRef}
-        className="relative w-full flex overflow-x-scroll overflow-y-hidden items-center 
+        className="relative w-full flex overflow-x-scroll md:overflow-hidden overflow-y-hidden items-center 
       snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FCA311]/80"
       >
         {projects.map((project, index) => (
