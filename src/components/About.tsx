@@ -34,7 +34,7 @@ const About = () => {
         src="/dev.webp"
         className="-mb-20 md:mb-0 flex-shrink-0 mt-12 sm:mt-0 w-56 h-56 rounded-full object-cover md:w-65 md:h-65 xl:w-[500px] xl:h-[500px] z-10"
       />
-      <div className="space-y-5 md:space-x-y px-0 md:px-10">
+      <div className="space-y-5 md:space-x-y px-0 md:px-10 z-10">
         <h4 className="text-4xl font-semibold">
           Get a{" "}
           <span className="underline underline-offset-4 decoration-[#FCA311]/50">

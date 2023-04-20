@@ -32,6 +32,5 @@ export default function Home() {
         <ContactMe />
       </section>
     </main>
-    //usar los links de react-scroll
   )
 }
