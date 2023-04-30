@@ -168,7 +168,7 @@ export const projects = [
     description:
       "This is a netflix clone, this project was made to understand how next-auth, prismadb, the api next.js folder works,  and introduce myself into typescript.This is one of my favorites because has a lot of top tech used in here. This project can handle auth with google, github and it's own, also can play videos and add movies to a favorite list.This project is currenlty on develop adding more features!",
     sourceCode: "https://github.com/lucasscurtoo/netflix-clone",
-    deployedApp: "https:/lucascurtonetflixclone.vercel.app",
+    deployedApp: "https://lucascurtonetflixclone.vercel.app/",
   },
   {
     title: "ChatBot",
