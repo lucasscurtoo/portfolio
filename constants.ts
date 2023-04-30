@@ -1,84 +1,72 @@
 export const techSkills = [
   {
     skillName: "React",
-    skillImage:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    skillImage: "/portfolioTechLogos/reactLogo.png",
     skillPercentage: 70,
   },
   {
     skillName: "JavaScript",
-    skillImage:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    skillImage: "/portfolioTechLogos/javascriptLogo.png",
     skillPercentage: 80,
   },
   {
     skillName: "Git",
-    skillImage: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+    skillImage: "/portfolioTechLogos/gitLogo.png",
     skillPercentage: 80,
   },
   {
     skillName: "Python",
-    skillImage:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+    skillImage: "/portfolioTechLogos/pythonLogo.png",
     skillPercentage: 50,
   },
   {
     skillName: "Django",
-    skillImage:
-      "https://1000marcas.net/wp-content/uploads/2021/06/Django-Logo.png",
+    skillImage: "/portfolioTechLogos/djangoLogo.png",
     skillPercentage: 45,
   },
   {
     skillName: "Tailwindcss",
-    skillImage:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+    skillImage: "/portfolioTechLogos/tailwindCssLogo.png",
     skillPercentage: 60,
   },
   {
     skillName: "Nextjs",
-    skillImage: "https://cdn.cdnlogo.com/logos/n/80/next-js.svg",
+    skillImage: "/portfolioTechLogos/nextJsLogo.png",
     skillPercentage: 80,
   },
   {
     skillName: "ExpressJs",
-    skillImage:
-      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+    skillImage: "/portfolioTechLogos/expressJs.png",
     skillPercentage: 70,
   },
   {
     skillName: "Figma",
-    skillImage:
-      "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    skillImage: "/portfolioTechLogos/figmaLogo.png",
     skillPercentage: 40,
   },
   {
     skillName: "MongoDB",
-    skillImage:
-      "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld",
+    skillImage: "/portfolioTechLogos/mongoDbLogo.png",
     skillPercentage: 75,
   },
   {
     skillName: "Redux-Toolkit",
-    skillImage:
-      "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+    skillImage: "/portfolioTechLogos/reduxToolkitLogo.png",
     skillPercentage: 50,
   },
   {
     skillName: "Css",
-    skillImage:
-      "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
+    skillImage: "/portfolioTechLogos/cssLogo.webp",
     skillPercentage: 65,
   },
   {
     skillName: "Html5",
-    skillImage:
-      "https://pixelmechanics.com.sg/wp-content/uploads/2019/06/html5-logo-for-web-development.png",
+    skillImage: "/portfolioTechLogos/html5.webp",
     skillPercentage: 90,
   },
   {
     skillName: "Mysql",
-    skillImage:
-      "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png",
+    skillImage: "/portfolioTechLogos/mysqlLogo.png",
     skillPercentage: 85,
   },
 ]
@@ -92,27 +80,27 @@ export const experience = [
     techUsed: [
       {
         name: "JavaScript",
-        src: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        src: "/portfolioTechLogos/javascriptLogo.png",
       },
       {
         name: "React",
-        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        src: "/portfolioTechLogos/reactLogo.png",
       },
       {
         name: "Python",
-        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+        src: "/portfolioTechLogos/pythonLogo.png",
       },
       {
         name: "Django",
-        src: "https://1000marcas.net/wp-content/uploads/2021/06/Django-Logo.png",
+        src: "/portfolioTechLogos/djangoLogo.png",
       },
       {
         name: "Git",
-        src: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        src: "/portfolioTechLogos/gitLogo.png",
       },
       {
         name: "Tailwindcss",
-        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+        src: "/portfolioTechLogos/tailwindCssLogo.png",
       },
     ],
     workDateTime: { startedAT: "April 2021", endedAt: "November 2022" },
@@ -122,38 +110,37 @@ export const experience = [
     ],
   },
   {
-    imageSrc:
-      "https://logos-download.com/wp-content/uploads/2016/06/Freelancer_logo.png",
+    imageSrc: "/portfolioTechLogos/freelancerLogo.png",
     position: "Full Stack",
     companyName: "Freelancer",
     techUsed: [
       {
         name: "Nextjs",
-        src: "https://cdn.cdnlogo.com/logos/n/80/next-js.svg",
+        src: "/portfolioTechLogos/nextJsLogo.png",
       },
       {
         name: "ExpressJs",
-        src: "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+        src: "/portfolioTechLogos/expressJs.png",
       },
       {
         name: "Figma",
-        src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+        src: "/portfolioTechLogos/figmaLogo.png",
       },
       {
         name: "MongoDB",
-        src: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld",
+        src: "/portfolioTechLogos/mongoDbLogo.png",
       },
       {
         name: "Git",
-        src: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        src: "/portfolioTechLogos/gitLogo.png",
       },
       {
         name: "Tailwindcss",
-        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
+        src: "/portfolioTechLogos/tailwindCssLogo.png",
       },
       {
         name: "Redux-Toolkit",
-        src: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+        src: "/portfolioTechLogos/reduxToolkitLogo.png",
       },
     ],
     workDateTime: { startedAT: "March 2022" },
@@ -181,6 +168,15 @@ export const projects = [
     description:
       "This is a netflix clone, this project was made to understand how next-auth, prismadb, the api next.js folder works,  and introduce myself into typescript.This is one of my favorites because has a lot of top tech used in here. This project can handle auth with google, github and it's own, also can play videos and add movies to a favorite list.This project is currenlty on develop adding more features!",
     sourceCode: "https://github.com/lucasscurtoo/netflix-clone",
-    deployedApp: "https://netflix-clone-bice-gamma.vercel.app/auth",
+    deployedApp: "https:/lucascurtonetflixclone.vercel.app",
+  },
+  {
+    title: "ChatBot",
+    src: "/chatBotLogo.png",
+    hint: "ChatBot is a project to learn how to use langchain, this app web uses artificial intelligence to answer the users development questions, the project is currently incompleted, i'm looking what can i add to be more useful.",
+    description:
+      "ChatBot is a project to learn how to use langchain, this app web uses artificial intelligence to answer the users development questions, the project is currently incompleted, i'm looking what can i add to be more useful.",
+    sourceCode: "https://github.com/lucasscurtoo/chatBotWeb",
+    deployedApp: "https://lucascurtochatbot.vercel.app/",
   },
 ]
