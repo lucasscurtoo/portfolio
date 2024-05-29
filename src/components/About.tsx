@@ -12,8 +12,7 @@ const About = () => {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col relative h-screen text-center 
-  md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly"
     >
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
@@ -34,7 +33,7 @@ const About = () => {
         src="/dev.webp"
         className="-mb-20 md:mb-0 flex-shrink-0 mt-12 sm:mt-0 w-56 h-56 rounded-full object-cover md:w-65 md:h-65 xl:w-[500px] xl:h-[500px] z-10"
       />
-      <div className="space-y-5 md:space-x-y px-0 md:px-10 z-10">
+      <div className="z-10 px-0 space-y-5 md:space-x-y md:px-10">
         <h4 className="text-4xl font-semibold">
           Get a{" "}
           <span className="underline underline-offset-4 decoration-[#FCA311]/50">

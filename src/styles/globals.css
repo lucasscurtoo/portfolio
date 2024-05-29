@@ -12,3 +12,35 @@
      placeholder-gray-500 transition-all focus:border-[#FCA311]/40 focus:text-[#FCA311]/40 hover:border-[#FCA311]/40;
   }
 }
+
+@keyframes border-dance {
+  0%,
+  10% {
+    border-color: transparent;
+  }
+  10%,
+  30% {
+    border-top-color: rgb(229 231 235 / 0.2);
+  }
+  30%,
+  50% {
+    border-right-color: rgb(229 231 235 / 0.2);
+  }
+  50%,
+  70% {
+    border-bottom-color: rgb(229 231 235 / 0.2);
+  }
+  70%,
+  90% {
+    border-left-color: rgb(229 231 235 / 0.2);
+  }
+  90%,
+  100% {
+    border-color: rgb(229 231 235 / 0.2);
+  }
+}
+
+.border-dance-animation:hover {
+  animation: border-dance 6s infinite;
+}
+

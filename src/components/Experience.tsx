@@ -1,8 +1,39 @@
-import { motion } from "framer-motion"
-import { experience } from "../../constants"
-import ExperienceCard from "./ExperienceCard"
+import { motion } from 'framer-motion'
+import ExperienceCard from './ExperienceCard'
 
-const Experience = () => {
+interface experienceProps {
+  experiences: [
+    {
+      enterpriseName: string
+      _type: string
+      techs: [
+        {
+          _id: string
+          skill: string
+          imagePath: string
+        },
+      ]
+      endedAt: string
+      _id: string
+      position: string
+      _updatedAt: string
+      deployedSites: [
+        {
+          hint: string
+          _key: string
+          url: string
+        },
+      ]
+      imagePath: string
+      _rev: string
+      startedAt: string
+      _createdAt: string
+      tasks: string[]
+    },
+  ]
+}
+
+const Experience = ({ experiences }: experienceProps) => {
   return (
     <motion.div
       initial={{
@@ -14,25 +45,27 @@ const Experience = () => {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex relative overflow-hidden flex-col  md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
+      className='flex flex-col items-center justify-center h-screen max-w-full px-10 mx-auto space-y-8 overflow-hidden lg:space-y-16'
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl'>
         Experience
       </h3>
       <div
-        className="w-full flex space-x-5 overflow-x-scroll  mt-8
-      snap-x snap-mandatory scrollbar p-1 md:justify-center
-       scrollbar-track-gray-400/20 scrollbar-thumb-[#FCA311]/80"
+        className='w-full flex space-x-5 overflow-x-scroll lg:overflow-visible  mt-8
+      snap-x snap-mandatory scrollbar-none p-1 md:justify-center
+       scrollbar-track-gray-400/20 scrollbar-thumb-[#FCA311]/80'
       >
-        {experience.map((experienceCard, indx) => (
+        {experiences.map((experienceCard, indx) => (
           <ExperienceCard
             key={indx}
-            imageSrc={experienceCard.imageSrc}
+            imageSrc={experienceCard.imagePath}
             position={experienceCard.position}
-            companyName={experienceCard.companyName}
-            techUsed={experienceCard.techUsed}
-            workDateTime={experienceCard.workDateTime}
+            companyName={experienceCard.enterpriseName}
+            techsUsed={experienceCard.techs}
+            startedAt={experienceCard.startedAt}
+            endedAt={experienceCard.endedAt}
             tasks={experienceCard.tasks}
+            deployedSites={experienceCard.deployedSites}
           />
         ))}
       </div>
@@ -40,3 +73,4 @@ const Experience = () => {
   )
 }
 export default Experience
+
