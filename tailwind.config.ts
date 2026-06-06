@@ -8,9 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes: {
+        "pulse-ring": {
+          "0%":   { transform: "scale(.6)", opacity: "0.9" },
+          "100%": { transform: "scale(1.9)", opacity: "0" },
+        },
+      },
+      animation: {
+        "pulse-ring": "pulse-ring 2s ease-out infinite",
       },
     },
   },
