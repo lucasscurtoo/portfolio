@@ -48,7 +48,7 @@ export const PROJECTS = [
       es: "Sistema de control de stock con impresión de tickets térmicos",
     },
     description: {
-      en: "Internal software for a distributor: product inventory, movement tracking, and direct thermal ticket printing. Full-stack built solo.",
+      en: "Internal software for a distributor: product inventory, movement tracking, and direct thermal ticket printing. Built end-to-end solo.",
       es: "Software interno para una distribuidora: inventario de productos, registro de movimientos e impresión directa de tickets térmicos. Full-stack construido solo.",
     },
     tags: ["NestJS", "Next.js", "PostgreSQL", "React Query", "Zustand"],
@@ -169,7 +169,7 @@ export const EXPERIENCE = [
     current: false,
     points: {
       en: [
-        "Built the BackOffice admin panel from zero — no handoff, just a design and a deadline.",
+        "Built the BackOffice admin panel from scratch — no handoff, just a design and a deadline.",
         "Refactored legacy code while shipping new features without breaking existing flows.",
         "Matched the product's design language across every new screen.",
       ],
@@ -189,12 +189,12 @@ export const EXPERIENCE = [
       en: [
         "Worked across the stack: JavaScript, React, Python, Django REST.",
         "Contributed to the company's public website alongside senior engineers.",
-        "Paired with senior developers from week one — no hand-holding ramp-up.",
+        "Paired with senior developers from week one — zero hand-holding.",
       ],
       es: [
         "Trabajé en todo el stack: JavaScript, React, Python, Django REST.",
         "Contribuí al sitio web público de la empresa junto a ingenieros senior.",
-        "Trabajé en par con seniors desde la primera semana — sin período de adaptación prolongado.",
+        "Hice pair con seniors desde la primera semana — sin período de adaptación.",
       ],
     },
   },
@@ -270,7 +270,7 @@ export const COPY = {
     eyebrow: { en: "01. About", es: "01. Sobre mí" },
     title: { en: "How I work", es: "Cómo trabajo" },
     body: {
-      en: "I start with the domain, not the framework. Before writing a line of code I model the business problem — then build the API, the frontend, and the infrastructure around it. I've shipped 3 complete production systems end-to-end at my current role, applying Domain-Driven Design with NestJS and deploying on AWS.",
+      en: "I start with the domain, not the framework. Before writing a line of code I model the business problem — then build the API, the frontend, and the infrastructure around it. I've shipped 3 complete production systems end-to-end in my current role, applying Domain-Driven Design with NestJS and deploying on AWS.",
       es: "Empiezo por el dominio, no por el framework. Antes de escribir una línea de código, entiendo el problema de negocio — luego construyo la API, el frontend y la infraestructura alrededor. En mi rol actual entregué 3 sistemas completos en producción, de punta a punta, aplicando DDD con NestJS y desplegando en AWS.",
     },
     facts: {
