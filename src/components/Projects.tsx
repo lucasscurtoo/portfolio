@@ -1,7 +1,9 @@
 "use client";
 
 import Reveal from "./Reveal";
-import Eyebrow from "./Eyebrow";
+import SectionHeader from "./ui/SectionHeader";
+import Panel from "./ui/Panel";
+import Chip from "./ui/Chip";
 import { useLang } from "@/lib/lang-context";
 import { PROJECTS, COPY } from "@/lib/data";
 
@@ -28,69 +30,61 @@ export default function Projects() {
   const c = COPY.projects;
   const featured = PROJECTS.filter((p) => p.featured);
   const rest = PROJECTS.filter((p) => !p.featured);
+  const lockedLabel = lang === "en" ? "Private — NDA" : "Privado — NDA";
 
   return (
     <section id="projects" className="py-24 relative z-10">
       <div className="w-full max-w-[var(--maxw)] mx-auto px-7">
         <Reveal>
-          <Eyebrow label={c.eyebrow[lang]} />
-          <h2 className="text-[clamp(28px,4vw,42px)] font-semibold tracking-[-0.02em] leading-[1.1] mb-10">
-            {c.title[lang]}
-          </h2>
+          <SectionHeader op="02" code="PAYLOADS" title={c.title[lang]} className="mb-10" />
         </Reveal>
 
         {/* featured grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
           {featured.map((project, i) => (
             <Reveal key={project.name} delay={i * 0.07}>
-              <div className="group flex flex-col h-full border border-[var(--border-soft)] bg-[var(--bg-elev)] rounded-[16px] p-6 hover:border-[var(--accent)] hover:shadow-[0_0_32px_var(--glow)] hover:-translate-y-1 transition-all duration-250">
-                {/* top */}
-                <div className="flex items-start justify-between gap-3 mb-4">
-                  <div>
-                    <h3 className="text-[17px] font-semibold tracking-[-0.01em] mb-1 group-hover:text-[var(--accent)] transition-colors">
-                      {project.name}
-                    </h3>
-                    <span className="font-mono text-[10.5px] text-[var(--faint)]">{project.type[lang]}</span>
-                  </div>
+              <Panel interactive tab className="group flex flex-col h-full p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="font-mono text-[9.5px] tracking-[0.18em] text-[var(--faint)] uppercase">
+                    PAYLOAD_{String(i + 1).padStart(2, "0")}
+                  </span>
                   {project.url ? (
                     <a
                       href={project.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex-shrink-0 w-[32px] h-[32px] grid place-items-center border border-[var(--border-soft)] rounded-[8px] text-[var(--faint)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:bg-[var(--accent-dim)] transition-all"
-                      aria-label={`Open ${project.name}`}
+                      className="flex-shrink-0 w-[30px] h-[30px] grid place-items-center border border-[var(--border)] text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:bg-[var(--accent-dim)] transition-all"
+                      aria-label={`${lang === "en" ? "Open" : "Abrir"} ${project.name}`}
                     >
                       <ExternalIcon />
                     </a>
                   ) : (
-                    <span className="flex-shrink-0 w-[32px] h-[32px] grid place-items-center border border-[var(--border-soft)] rounded-[8px] text-[var(--faint)]">
-                      <LockIcon />
+                    <span className="flex-shrink-0 grid place-items-center px-2 h-[24px] border border-[var(--border)] text-[var(--faint)]" title={lockedLabel}>
+                      <span className="flex items-center gap-1 font-mono text-[9px] uppercase tracking-[0.1em]">
+                        <LockIcon /> {lang === "en" ? "NDA" : "NDA"}
+                      </span>
                     </span>
                   )}
                 </div>
 
-                {/* tagline */}
-                <p className="text-[13.5px] text-[var(--accent)] font-medium mb-3 leading-[1.45]">
+                <h3 className="font-display uppercase text-[24px] leading-[0.95] mb-1.5 text-[var(--text)] group-hover:text-[var(--accent)] transition-colors">
+                  {project.name}
+                </h3>
+                <span className="font-mono text-[10.5px] text-[var(--faint)] mb-3">{project.type[lang]}</span>
+
+                <p className="text-[13.5px] text-[var(--accent-safe)] font-semibold mb-2.5 leading-[1.45]">
                   {project.tagline[lang]}
                 </p>
-
-                {/* description */}
                 <p className="text-[13px] text-[var(--muted)] leading-[1.75] mb-5 flex-1">
                   {project.description[lang]}
                 </p>
 
-                {/* tags */}
                 <div className="flex flex-wrap gap-1.5">
                   {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="font-mono text-[10.5px] px-2 py-1 bg-[var(--bg-elev-2)] border border-[var(--border-soft)] rounded-[6px] text-[var(--faint)]"
-                    >
-                      {tag}
-                    </span>
+                    <Chip key={tag}>{tag}</Chip>
                   ))}
                 </div>
-              </div>
+              </Panel>
             </Reveal>
           ))}
         </div>
@@ -99,23 +93,23 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {rest.map((project, i) => (
             <Reveal key={project.name} delay={i * 0.06}>
-              <div className="flex items-start gap-4 border border-[var(--border-soft)] bg-[var(--bg-elev)] rounded-[14px] px-5 py-4 hover:border-[var(--border)] hover:shadow-[0_0_20px_var(--glow)] transition-all duration-200">
+              <Panel interactive className="flex items-start gap-4 px-5 py-4">
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    <h3 className="text-[15.5px] font-semibold tracking-[-0.01em]">{project.name}</h3>
-                    <span className="font-mono text-[10px] text-[var(--faint)]">· {project.type[lang]}</span>
+                  <div className="flex items-center flex-wrap gap-2 mb-1">
+                    <h3 className="font-display uppercase text-[19px] leading-none text-[var(--text)]">{project.name}</h3>
+                    <span className="font-mono text-[10px] text-[var(--faint)]">// {project.type[lang]}</span>
                   </div>
                   <p className="text-[13px] text-[var(--muted)] mb-3 leading-[1.7]">{project.description[lang]}</p>
                   <div className="flex flex-wrap gap-1.5">
                     {project.tags.slice(0, 5).map((tag) => (
-                      <span key={tag} className="font-mono text-[10.5px] px-2 py-0.5 bg-[var(--bg-elev-2)] border border-[var(--border-soft)] rounded-[5px] text-[var(--faint)]">
-                        {tag}
-                      </span>
+                      <Chip key={tag}>{tag}</Chip>
                     ))}
                   </div>
                 </div>
-                <span className="flex-shrink-0 mt-1 text-[var(--faint)]"><LockIcon /></span>
-              </div>
+                <span className="flex-shrink-0 flex items-center gap-1 font-mono text-[9px] uppercase tracking-[0.1em] text-[var(--faint)] mt-1" title={lockedLabel}>
+                  <LockIcon /> NDA
+                </span>
+              </Panel>
             </Reveal>
           ))}
         </div>

@@ -3,6 +3,8 @@ import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
 import { ThemeProvider } from "@/lib/theme-context";
 import AuroraBackground from "@/components/AuroraBackground";
+import DedSecHud from "@/components/DedSecHud";
+import HudShell from "@/components/HudShell";
 
 export const metadata: Metadata = {
   title: "Lucas Curto — Full-Stack Developer | NestJS · Next.js · AWS",
@@ -46,7 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <LangProvider>
             <AuroraBackground />
+            <HudShell />
             {children}
+            <DedSecHud />
           </LangProvider>
         </ThemeProvider>
       </body>

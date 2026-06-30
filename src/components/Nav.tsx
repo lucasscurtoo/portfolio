@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useLang } from "@/lib/lang-context";
 import { useTheme } from "@/lib/theme-context";
 import { NAV_ITEMS, COPY } from "@/lib/data";
+import Skull from "./Skull";
 
 function SunIcon() {
   return (
@@ -47,9 +48,9 @@ export default function Nav() {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
       style={{
         background: scrolled ? "var(--nav-bg)" : "transparent",
-        backdropFilter: scrolled ? "blur(16px) saturate(180%)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(16px) saturate(180%)" : "none",
-        borderBottom: scrolled ? "1px solid var(--border-soft)" : "1px solid transparent",
+        backdropFilter: scrolled ? "blur(14px)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(14px)" : "none",
+        borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
       }}
     >
       <div className="w-full max-w-[var(--maxw)] mx-auto px-7 flex items-center justify-between h-[68px] relative z-10">
@@ -59,24 +60,24 @@ export default function Nav() {
           className="flex items-center gap-3 group"
           aria-label="Go to top"
         >
-          <span
-            className="font-mono font-bold text-[13px] tracking-widest text-[var(--accent)] w-[30px] h-[30px] grid place-items-center rounded-[7px] border border-[var(--accent)] opacity-80 group-hover:opacity-100 transition-opacity"
-          >
-            LC
+          <span className="w-[34px] h-[34px] grid place-items-center bg-[var(--accent)] text-[var(--accent-text)] group-hover:shadow-[0_0_18px_var(--glow)] transition-all">
+            <Skull size={20} />
           </span>
-          <span className="hidden sm:block font-medium text-[15px] tracking-tight text-[var(--muted)] group-hover:text-[var(--text)] transition-colors">
-            Lucas Curto
+          <span className="hidden sm:flex flex-col leading-none">
+            <span className="font-display text-[17px] tracking-[0.04em] text-[var(--text)]">DEDSEC</span>
+            <span className="font-mono text-[8.5px] tracking-[0.2em] text-[var(--faint)] uppercase mt-0.5">node // lucas_curto</span>
           </span>
         </button>
 
         {/* desktop links */}
-        <div className="hidden md:flex items-center gap-7">
-          {NAV_ITEMS.map((n) => (
+        <div className="hidden md:flex items-center gap-6">
+          {NAV_ITEMS.map((n, i) => (
             <button
               key={n.id}
               onClick={() => scrollTo(n.id)}
-              className="text-[13.5px] text-[var(--faint)] hover:text-[var(--text)] transition-colors"
+              className="group font-mono text-[12px] uppercase tracking-[0.08em] text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
             >
+              <span className="text-[var(--faint)] group-hover:text-[var(--accent)]">{String(i + 1).padStart(2, "0")}/</span>
               {lang === "en" ? n.en : n.es}
             </button>
           ))}
@@ -86,25 +87,25 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-2">
           <button
             onClick={toggleTheme}
-            className="w-[32px] h-[32px] grid place-items-center rounded-[8px] text-[var(--faint)] hover:text-[var(--accent)] hover:bg-[var(--accent-dim)] transition-all duration-200"
+            className="w-[32px] h-[32px] grid place-items-center text-[var(--muted)] border border-transparent hover:text-[var(--accent)] hover:border-[var(--border)] transition-all duration-200"
             aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
           >
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
           <button
             onClick={toggle}
-            className="font-mono text-[11.5px] text-[var(--faint)] hover:text-[var(--accent)] transition-colors w-[32px] h-[32px] grid place-items-center rounded-[8px] hover:bg-[var(--accent-dim)]"
+            className="font-mono text-[11.5px] text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-[32px] h-[32px] grid place-items-center border border-transparent hover:border-[var(--border)]"
             aria-label="Switch language"
           >
             {lang === "en" ? "ES" : "EN"}
           </button>
           <button
             onClick={() => scrollTo("contact")}
-            className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-[8px] border border-[var(--border)] text-[13px] font-medium text-[var(--muted)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:bg-[var(--accent-dim)] transition-all duration-200"
+            className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 bg-[var(--accent)] text-[var(--accent-text)] font-mono text-[12px] font-bold uppercase tracking-[0.08em] hover:shadow-[0_0_18px_var(--glow)] hover:-translate-y-px transition-all duration-200"
           >
             {COPY.nav.cta[lang]}
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
         </div>
@@ -113,14 +114,14 @@ export default function Nav() {
         <div className="flex md:hidden items-center gap-1.5">
           <button
             onClick={toggleTheme}
-            className="w-[34px] h-[34px] grid place-items-center rounded-[8px] text-[var(--faint)] hover:text-[var(--accent)] hover:bg-[var(--accent-dim)] transition-all"
+            className="w-[34px] h-[34px] grid place-items-center text-[var(--muted)] hover:text-[var(--accent)] transition-all"
             aria-label={theme === "dark" ? "Light mode" : "Dark mode"}
           >
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
           <button
             onClick={toggle}
-            className="font-mono text-[11px] text-[var(--faint)] hover:text-[var(--accent)] w-[34px] h-[34px] grid place-items-center rounded-[8px] hover:bg-[var(--accent-dim)] transition-all"
+            className="font-mono text-[11px] text-[var(--muted)] hover:text-[var(--accent)] w-[34px] h-[34px] grid place-items-center transition-all"
           >
             {lang === "en" ? "ES" : "EN"}
           </button>
@@ -130,11 +131,11 @@ export default function Nav() {
             aria-label="Menu"
           >
             <span
-              className="w-[20px] h-[1.5px] bg-[var(--muted)] rounded-full transition-all duration-200"
+              className="w-[20px] h-[2px] bg-[var(--accent)] transition-all duration-200"
               style={open ? { transform: "translateY(3.5px) rotate(45deg)" } : {}}
             />
             <span
-              className="w-[20px] h-[1.5px] bg-[var(--muted)] rounded-full transition-all duration-200"
+              className="w-[20px] h-[2px] bg-[var(--accent)] transition-all duration-200"
               style={open ? { transform: "translateY(-3.5px) rotate(-45deg)" } : {}}
             />
           </button>
@@ -143,15 +144,16 @@ export default function Nav() {
 
       {/* mobile drawer */}
       <div
-        className="md:hidden flex flex-col gap-0.5 px-6 pb-5 backdrop-blur-xl border-b border-[var(--border-soft)] transition-all duration-250 overflow-hidden"
-        style={{ background: "var(--nav-bg)", maxHeight: open ? "320px" : "0", opacity: open ? 1 : 0 }}
+        className="md:hidden flex flex-col gap-0.5 px-6 pb-5 backdrop-blur-xl border-b border-[var(--border)] transition-all duration-250 overflow-hidden"
+        style={{ background: "var(--nav-bg)", maxHeight: open ? "340px" : "0", opacity: open ? 1 : 0 }}
       >
-        {NAV_ITEMS.map((n) => (
+        {NAV_ITEMS.map((n, i) => (
           <button
             key={n.id}
             onClick={() => scrollTo(n.id)}
-            className="text-left text-[15px] py-2.5 text-[var(--muted)] hover:text-[var(--text)] transition-colors w-full border-b border-[var(--border-soft)] last:border-0"
+            className="text-left font-mono text-[14px] uppercase tracking-[0.06em] py-2.5 text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-full border-b border-[var(--border-soft)] last:border-0"
           >
+            <span className="text-[var(--faint)]">{String(i + 1).padStart(2, "0")}/ </span>
             {lang === "en" ? n.en : n.es}
           </button>
         ))}
