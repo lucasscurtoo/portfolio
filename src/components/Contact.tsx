@@ -64,14 +64,21 @@ export default function Contact() {
         </Reveal>
 
         {/* footer */}
-        <div className="mt-14 border-t border-[var(--border)] pt-6 flex flex-wrap gap-3 justify-between items-center font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--faint)]">
-          <span className="flex items-center gap-2 text-[var(--accent-safe)]">
-            <Skull size={14} className="text-[var(--accent)]" />
-            {lang === "en" ? "System online" : "Sistema activo"}
-          </span>
-          <span>Lucas Curto · {new Date().getFullYear()}</span>
-          <span className="hidden sm:inline">{COPY.footer.built[lang]}</span>
-        </div>
+        <footer className="mt-16 border-t-2 border-[var(--accent)] pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-center sm:text-left">
+          <div className="flex items-center justify-center sm:justify-start gap-2.5">
+            <span className="grid place-items-center w-[30px] h-[30px] bg-[var(--accent)] text-[var(--accent-text)]">
+              <Skull size={18} />
+            </span>
+            <span className="font-display uppercase text-[18px] leading-none text-[var(--text)]">Lucas Curto</span>
+          </div>
+          <div className="flex flex-col sm:items-end gap-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--faint)]">
+            <span className="flex items-center justify-center sm:justify-end gap-2 text-[var(--accent-safe)]">
+              <span className="w-[6px] h-[6px] bg-[var(--accent)] animate-pulse" />
+              {lang === "en" ? "System online" : "Sistema activo"}
+            </span>
+            <span>© {new Date().getFullYear()} · {COPY.footer.built[lang]}</span>
+          </div>
+        </footer>
       </div>
     </section>
   );

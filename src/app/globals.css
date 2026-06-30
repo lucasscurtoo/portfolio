@@ -11,11 +11,11 @@
 
 :root,
 [data-theme="dark"] {
-  --accent:      oklch(0.64 0.29 352);          /* hot magenta — large type/icons/state only */
-  --accent-dim:  oklch(0.64 0.29 352 / 0.16);
-  --accent-text: oklch(0.08 0 0);               /* on magenta fills  */
-  --accent-glow: oklch(0.64 0.29 352 / 0.6);
-  --accent-safe: oklch(0.80 0.16 352);          /* AA magenta for <24px text on dark */
+  --accent:      oklch(0.87 0.22 138);          /* verde Ferxxo — neon lime, large type/icons/state */
+  --accent-dim:  oklch(0.87 0.22 138 / 0.16);
+  --accent-text: oklch(0.12 0.03 150);          /* dark ink on green fills */
+  --accent-glow: oklch(0.87 0.22 138 / 0.55);
+  --accent-safe: oklch(0.88 0.20 140);          /* bright green — AA for <24px text on black */
 
   --bg:          oklch(0.07 0 0);               /* near-black        */
   --bg-elev:     oklch(0.11 0 0 / 0.7);
@@ -30,7 +30,7 @@
   --halftone:    oklch(0.85 0 0 / 0.10);
   --scanline:    oklch(0 0 0 / 0.42);
   --orb-opacity: 1;
-  --glow:        oklch(0.64 0.29 352 / 0.32);
+  --glow:        oklch(0.87 0.22 138 / 0.30);
 
   --font-display: 'Anton', system-ui, sans-serif;
   --font-body: 'Archivo', system-ui, sans-serif;
@@ -40,11 +40,11 @@
 
 [data-theme="light"] {
   /* xerox flyer — black ink on bleached paper */
-  --accent:      oklch(0.55 0.27 352);
-  --accent-dim:  oklch(0.55 0.27 352 / 0.12);
+  --accent:      oklch(0.62 0.19 140);          /* verde Ferxxo, deepened for paper */
+  --accent-dim:  oklch(0.62 0.19 140 / 0.12);
   --accent-text: oklch(0.99 0 0);
-  --accent-glow: oklch(0.55 0.27 352 / 0.30);
-  --accent-safe: oklch(0.46 0.27 352);          /* AA magenta for <24px text on paper */
+  --accent-glow: oklch(0.62 0.19 140 / 0.30);
+  --accent-safe: oklch(0.48 0.19 142);          /* dark green — AA for <24px text on paper */
 
   --bg:          oklch(0.93 0.004 60);
   --bg-elev:     oklch(0.98 0.003 60 / 0.85);
@@ -59,7 +59,7 @@
   --halftone:    oklch(0.15 0 0 / 0.10);
   --scanline:    oklch(0 0 0 / 0.04);
   --orb-opacity: 0.5;
-  --glow:        oklch(0.55 0.27 352 / 0.18);
+  --glow:        oklch(0.62 0.19 140 / 0.18);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

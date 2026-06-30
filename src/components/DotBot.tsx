@@ -32,7 +32,7 @@ export default function DotBot({ size = 220 }: { size?: number }) {
     const dotR = cell * 0.34;
 
     // theme colors (re-read on theme switch)
-    let accent = "oklch(0.64 0.29 352)";
+    let accent = "oklch(0.87 0.22 138)";
     let bright = "oklch(0.97 0 0)";
     const readColors = () => {
       const s = getComputedStyle(document.documentElement);
