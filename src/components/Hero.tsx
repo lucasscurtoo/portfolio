@@ -74,9 +74,9 @@ export default function Hero() {
   return (
     <section className="min-h-[100svh] flex items-center pt-[120px] pb-24 relative z-10">
       <div className="w-full max-w-[var(--maxw)] mx-auto px-7">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-14 items-center">
           {/* left */}
-          <div>
+          <div className="min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -195,7 +195,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.65, delay: 0.3 }}
-            className="lg:order-none order-last flex flex-col items-center gap-8"
+            className="lg:order-none order-last flex flex-col items-center gap-8 min-w-0 w-full"
           >
             <div className="grid place-items-center pt-2">
               <DotBot size={220} />

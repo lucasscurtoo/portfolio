@@ -190,8 +190,8 @@ export default function DotBot({ size = 220 }: { size?: number }) {
   }, [size, reduce]);
 
   return (
-    <div aria-hidden="true" className="relative select-none" style={{ width: size, height: size }}>
-      <canvas ref={canvasRef} style={{ width: size, height: size, display: "block" }} />
+    <div aria-hidden="true" className="relative select-none max-w-full" style={{ width: size, height: size }}>
+      <canvas ref={canvasRef} style={{ width: size, height: size, maxWidth: "100%", display: "block" }} />
     </div>
   );
 }
