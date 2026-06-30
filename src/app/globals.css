@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 /* ─────────────────────────────────────────────────────────
-   DEDSEC theme — xerox black + hot magenta, halftone, glitch
-   "We are DedSec." monochrome anarchist HUD
+   Hacker-HUD theme — xerox black + hot magenta, halftone, glitch.
+   Monochrome single-accent system (WD2-inspired, not branded).
    ───────────────────────────────────────────────────────── */
 
 :root,
@@ -79,7 +79,7 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* halftone dither — dense dot screen, like screen-printed DedSec posters */
+/* halftone dither — dense dot screen, like screen-printed Hacker-HUD posters */
 body::before {
   content: "";
   position: fixed;
@@ -176,31 +176,31 @@ section { scroll-margin-top: 88px; position: relative; z-index: 1; }
 .animate-orb-2 { animation: orb-2 26s ease-in-out infinite; }
 .marquee       { animation: marquee 22s linear infinite; }
 
-/* ───────────── DedSec primitives ───────────── */
+/* ───────────── Hacker-HUD primitives ───────────── */
 @layer utilities {
   .text-balance { text-wrap: balance; }
   .font-mono    { font-family: var(--font-mono) !important; }
   .font-display { font-family: var(--font-display) !important; }
 
   /* hard stencil frame — thick border, no radius */
-  .dedsec-card {
+  .hud-card {
     position: relative;
     border: 1px solid var(--border);
     background: var(--bg-elev);
     backdrop-filter: blur(3px);
     transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
   }
-  .dedsec-card--hover:hover {
+  .hud-card--hover:hover {
     border-color: var(--accent);
     box-shadow: 6px 6px 0 0 var(--accent-dim), 0 0 26px var(--glow);
     transform: translate(-2px, -2px);
   }
-  .dedsec-card--hover:focus-within {
+  .hud-card--hover:focus-within {
     border-color: var(--accent);
   }
 
   /* magenta tab notch top-left of a card */
-  .dedsec-tab::before {
+  .hud-tab::before {
     content: "";
     position: absolute;
     top: -1px; left: -1px;

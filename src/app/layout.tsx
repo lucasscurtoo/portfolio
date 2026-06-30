@@ -3,7 +3,7 @@ import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
 import { ThemeProvider } from "@/lib/theme-context";
 import AuroraBackground from "@/components/AuroraBackground";
-import DedSecHud from "@/components/DedSecHud";
+import Ticker from "@/components/Ticker";
 import HudShell from "@/components/HudShell";
 
 export const metadata: Metadata = {
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <AuroraBackground />
             <HudShell />
             {children}
-            <DedSecHud />
+            <Ticker />
           </LangProvider>
         </ThemeProvider>
       </body>

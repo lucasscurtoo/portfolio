@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { PROFILE, COPY, TERMINAL_LINES } from "@/lib/data";
 import Skull from "./Skull";
-import EyeBot from "./EyeBot";
+import DotBot from "./DotBot";
 import Decrypt from "./ui/Decrypt";
 
 type LineType = { type: string; text?: string; key?: string; val?: string; rest?: string };
@@ -84,7 +84,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 bg-[var(--accent)] text-[var(--accent-text)] px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-[0.14em] mb-6"
             >
               <Skull size={14} />
-              {lang === "en" ? "Developer // DedSec node" : "Developer // nodo DedSec"}
+              {lang === "en" ? "Developer // System online" : "Developer // Sistema activo"}
             </motion.div>
 
             <motion.h1
@@ -117,7 +117,7 @@ export default function Hero() {
               {PROFILE.tagline[lang]}
             </motion.p>
 
-            {/* DedSec status bar */}
+            {/* Hacker-HUD status bar */}
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
@@ -198,10 +198,10 @@ export default function Hero() {
             className="lg:order-none order-last flex flex-col items-center gap-8"
           >
             <div className="grid place-items-center pt-2">
-              <EyeBot size={210} />
+              <DotBot size={220} />
             </div>
             <div
-              className="dedsec-card dedsec-tab overflow-hidden w-full"
+              className="hud-card hud-tab overflow-hidden w-full"
               style={{
                 boxShadow: "10px 10px 0 0 var(--accent-dim), 0 0 0 1px var(--border)",
               }}
@@ -209,7 +209,7 @@ export default function Hero() {
               {/* titlebar */}
               <div className="flex items-center gap-2 px-4 py-3 border-b border-[var(--border)] bg-[var(--bg-elev-2)]">
                 <Skull size={15} className="text-[var(--accent)]" />
-                <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">dedsec_profile.sh</span>
+                <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--muted)]">whoami.sh</span>
                 <span className="ml-auto font-mono text-[9px] text-[var(--accent)] tracking-[0.12em] uppercase flex items-center gap-1.5">
                   <span className="w-[5px] h-[5px] bg-[var(--accent)] animate-pulse" />
                   decrypted

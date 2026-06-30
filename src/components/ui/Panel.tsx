@@ -11,7 +11,7 @@ interface Props {
   interactive?: boolean;
 }
 
-/* Hard-edged DedSec panel — the single card primitive. No border-radius, ever. */
+/* Hard-edged Hacker-HUD panel — the single card primitive. No border-radius, ever. */
 export default function Panel({
   children,
   className = "",
@@ -22,9 +22,9 @@ export default function Panel({
   return (
     <div
       className={[
-        "dedsec-card",
-        tab ? "dedsec-tab" : "",
-        interactive ? "dedsec-card--hover" : "",
+        "hud-card",
+        tab ? "hud-tab" : "",
+        interactive ? "hud-card--hover" : "",
         "relative",
         className,
       ].join(" ")}

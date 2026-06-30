@@ -1,4 +1,4 @@
-/* DedSec hooded-skull mark — simplified vector of the spray-paint logo */
+/* Hacker-HUD hooded-skull mark — simplified vector of the spray-paint logo */
 export default function Skull({
   size = 24,
   className = "",

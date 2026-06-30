@@ -13,7 +13,7 @@ interface Props {
 }
 
 /*
-  DedSec section spine. The mono "OPERATION 0N // CODENAME" kicker is decorative
+  Hacker-HUD section spine. The mono "OPERATION 0N // CODENAME" kicker is decorative
   (aria-hidden); the Anton <h2> carries the real, scannable label for recruiters + AT.
 */
 export default function SectionHeader({ op, code, title, className = "", align = "left" }: Props) {

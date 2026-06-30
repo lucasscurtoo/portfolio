@@ -67,7 +67,7 @@ export default function Contact() {
         <div className="mt-14 border-t border-[var(--border)] pt-6 flex flex-wrap gap-3 justify-between items-center font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--faint)]">
           <span className="flex items-center gap-2 text-[var(--accent-safe)]">
             <Skull size={14} className="text-[var(--accent)]" />
-            {lang === "en" ? "We are DedSec" : "Somos DedSec"}
+            {lang === "en" ? "System online" : "Sistema activo"}
           </span>
           <span>Lucas Curto · {new Date().getFullYear()}</span>
           <span className="hidden sm:inline">{COPY.footer.built[lang]}</span>

@@ -64,8 +64,8 @@ export default function Nav() {
             <Skull size={20} />
           </span>
           <span className="hidden sm:flex flex-col leading-none">
-            <span className="font-display text-[17px] tracking-[0.04em] text-[var(--text)]">DEDSEC</span>
-            <span className="font-mono text-[8.5px] tracking-[0.2em] text-[var(--faint)] uppercase mt-0.5">node // lucas_curto</span>
+            <span className="font-display text-[17px] tracking-[0.04em] text-[var(--text)]">LUCAS CURTO</span>
+            <span className="font-mono text-[8.5px] tracking-[0.2em] text-[var(--faint)] uppercase mt-0.5">full-stack // dev</span>
           </span>
         </button>
 

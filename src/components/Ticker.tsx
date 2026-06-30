@@ -2,14 +2,14 @@
 
 import { useLang } from "@/lib/lang-context";
 
-/* DedSec heads-up overlay — scrolling propaganda ticker pinned to the bottom */
-export default function DedSecHud() {
+/* Heads-up overlay — scrolling slogan ticker pinned to the bottom (desktop). */
+export default function Ticker() {
   const { lang } = useLang();
 
   const slogans =
     lang === "en"
-      ? ["WE ARE DEDSEC", "OF THE PEOPLE", "FOR THE PEOPLE", "HACK THE SYSTEM", "FULL-STACK // NO MASTERS"]
-      : ["SOMOS DEDSEC", "DEL PUEBLO", "PARA EL PUEBLO", "HACKEÁ EL SISTEMA", "FULL-STACK // SIN AMOS"];
+      ? ["HACK THE SYSTEM", "BUILT END TO END", "BACKEND // FRONTEND // INFRA", "ONE DEVELOPER", "SHIP IT", "NO MASTERS"]
+      : ["HACKEÁ EL SISTEMA", "DE PUNTA A PUNTA", "BACKEND // FRONTEND // INFRA", "UN DESARROLLADOR", "A PRODUCCIÓN", "SIN AMOS"];
 
   // duplicated so the -50% marquee loop is seamless
   const strip = [...slogans, ...slogans];
@@ -25,7 +25,7 @@ export default function DedSecHud() {
             key={i}
             className="flex items-center gap-3 px-4 font-mono text-[10.5px] tracking-[0.22em] text-[var(--faint)]"
           >
-            <span className="text-[var(--accent)]">☠</span>
+            <span className="text-[var(--accent)]">▌</span>
             {s}
           </span>
         ))}
