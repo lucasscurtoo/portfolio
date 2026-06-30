@@ -97,7 +97,7 @@ export default function Projects() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center flex-wrap gap-2 mb-1">
                     <h3 className="font-display uppercase text-[19px] leading-none text-[var(--text)]">{project.name}</h3>
-                    <span className="font-mono text-[10px] text-[var(--faint)]">// {project.type[lang]}</span>
+                    <span className="font-mono text-[10px] text-[var(--faint)]">{"//"} {project.type[lang]}</span>
                   </div>
                   <p className="text-[13px] text-[var(--muted)] mb-3 leading-[1.7]">{project.description[lang]}</p>
                   <div className="flex flex-wrap gap-1.5">

@@ -30,7 +30,7 @@ export default function SectionHeader({ op, code, title, className = "", align =
           <Skull size={12} />
           OP_{op}
         </span>
-        <span className="text-[var(--faint)]">// {code}</span>
+        <span className="text-[var(--faint)]">{"//"} {code}</span>
       </div>
       <h2 className="font-display uppercase text-[clamp(34px,6vw,68px)] leading-[0.9] tracking-[0.01em] text-[var(--text)]">
         <Decrypt text={title} />
