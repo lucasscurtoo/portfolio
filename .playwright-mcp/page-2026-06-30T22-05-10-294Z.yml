@@ -1,0 +1,468 @@
+- generic [active] [ref=f17e1]:
+  - generic:
+    - img
+  - navigation "Section navigation" [ref=f17e2]:
+    - button "01/DOSSIER" [ref=f17e3] [cursor=pointer]:
+      - generic [ref=f17e5]: 01/DOSSIER
+    - button "02/PAYLOADS" [ref=f17e6] [cursor=pointer]:
+      - generic [ref=f17e8]: 02/PAYLOADS
+    - button "03/ARSENAL" [ref=f17e9] [cursor=pointer]:
+      - generic [ref=f17e11]: 03/ARSENAL
+    - button "04/LOGS" [ref=f17e12] [cursor=pointer]:
+      - generic [ref=f17e14]: 04/LOGS
+    - button "05/INTEL" [ref=f17e15] [cursor=pointer]:
+      - generic [ref=f17e17]: 05/INTEL
+    - button "06/TRANSMIT" [ref=f17e18] [cursor=pointer]:
+      - generic [ref=f17e20]: 06/TRANSMIT
+  - navigation [ref=f17e21]:
+    - generic [ref=f17e22]:
+      - button "Go to top" [ref=f17e23] [cursor=pointer]:
+        - img [ref=f17e25]
+        - generic [ref=f17e32]:
+          - generic [ref=f17e33]: LUCAS CURTO
+          - generic [ref=f17e34]: full-stack // dev
+      - generic [ref=f17e35]:
+        - button "01/About" [ref=f17e36] [cursor=pointer]:
+          - generic [ref=f17e37]: 01/
+          - text: About
+        - button "02/Projects" [ref=f17e38] [cursor=pointer]:
+          - generic [ref=f17e39]: 02/
+          - text: Projects
+        - button "03/Skills" [ref=f17e40] [cursor=pointer]:
+          - generic [ref=f17e41]: 03/
+          - text: Skills
+        - button "04/Experience" [ref=f17e42] [cursor=pointer]:
+          - generic [ref=f17e43]: 04/
+          - text: Experience
+        - button "05/Education" [ref=f17e44] [cursor=pointer]:
+          - generic [ref=f17e45]: 05/
+          - text: Education
+        - button "06/Contact" [ref=f17e46] [cursor=pointer]:
+          - generic [ref=f17e47]: 06/
+          - text: Contact
+      - generic [ref=f17e48]:
+        - button "Switch to light mode" [ref=f17e49] [cursor=pointer]:
+          - img [ref=f17e50]
+        - button "Switch language" [ref=f17e56] [cursor=pointer]: ES
+        - button "Contact" [ref=f17e57] [cursor=pointer]:
+          - text: Contact
+          - img [ref=f17e58]
+  - main [ref=f17e60]:
+    - generic [ref=f17e63]:
+      - generic [ref=f17e64]:
+        - generic [ref=f17e65]:
+          - img [ref=f17e66]
+          - text: Developer // System online
+        - heading "Lucas Curto" [level=1] [ref=f17e73]:
+          - generic [ref=f17e74]:
+            - generic [ref=f17e75]: Lucas Curto
+            - text: Lucas Curto
+        - paragraph [ref=f17e76]: Full-Stack Software Developer // backend-driven
+        - paragraph [ref=f17e77]: I own the backend. I ship the frontend. I run the infra — NestJS, Next.js, AWS. One developer, end to end.
+        - generic [ref=f17e78]:
+          - generic [ref=f17e79]:
+            - generic [ref=f17e80]:
+              - img [ref=f17e81]
+              - text: Status
+            - generic [ref=f17e88]: Open to opportunities
+          - generic [ref=f17e91]: ●●● ONLINE
+        - generic [ref=f17e92]:
+          - button "See My Work" [ref=f17e93] [cursor=pointer]:
+            - text: See My Work
+            - img [ref=f17e94]
+          - button "Contact" [ref=f17e96] [cursor=pointer]
+        - generic [ref=f17e97]:
+          - link "GitHub" [ref=f17e98] [cursor=pointer]:
+            - /url: https://github.com/lucascurto
+            - img [ref=f17e99]
+          - link "LinkedIn" [ref=f17e101] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/lucas-curto/
+            - img [ref=f17e102]
+      - generic [ref=f17e109]:
+        - img [ref=f17e110]
+        - generic [ref=f17e117]: whoami.sh
+        - generic [ref=f17e118]: decrypted
+    - generic [ref=f17e123]:
+      - generic [ref=f17e125]:
+        - generic [ref=f17e126]:
+          - generic [ref=f17e127]:
+            - img [ref=f17e128]
+            - text: OP_01
+          - generic [ref=f17e135]: // DOSSIER
+        - heading "How I work" [level=2] [ref=f17e136]:
+          - generic [ref=f17e137]:
+            - generic [ref=f17e138]: How I work
+            - text: How I work
+      - generic [ref=f17e139]:
+        - paragraph [ref=f17e141]: I start with the domain, not the framework. Before writing a line of code I model the business problem — then build the API, the frontend, and the infrastructure around it. I've shipped 3 complete production systems end-to-end in my current role, applying Domain-Driven Design with NestJS and deploying on AWS.
+        - generic [ref=f17e144]:
+          - generic [ref=f17e145]:
+            - generic [ref=f17e146]: subject.dat
+            - generic [ref=f17e147]: ●●●
+          - generic [ref=f17e148]:
+            - generic [ref=f17e149]:
+              - generic [ref=f17e150]: Location
+              - generic [ref=f17e151]: Montevideo, Uruguay
+            - generic [ref=f17e152]:
+              - generic [ref=f17e153]: Approach
+              - generic [ref=f17e154]: DDD · Full-stack
+            - generic [ref=f17e155]:
+              - generic [ref=f17e156]: English
+              - generic [ref=f17e157]: B2 — work-ready
+            - generic [ref=f17e158]:
+              - generic [ref=f17e159]: Status
+              - generic [ref=f17e160]: Open to opportunities
+    - generic [ref=f17e165]:
+      - generic [ref=f17e167]:
+        - generic [ref=f17e168]:
+          - generic [ref=f17e169]:
+            - img [ref=f17e170]
+            - text: OP_02
+          - generic [ref=f17e177]: // PAYLOADS
+        - heading "Things I've built" [level=2] [ref=f17e178]:
+          - generic [ref=f17e179]:
+            - generic [ref=f17e180]: Things I've built
+            - text: Things I've built
+      - generic [ref=f17e181]:
+        - generic [ref=f17e184]:
+          - generic [ref=f17e185]:
+            - generic [ref=f17e186]: PAYLOAD_01
+            - link "Open Varel" [ref=f17e187] [cursor=pointer]:
+              - /url: https://varel.uy
+              - img [ref=f17e188]
+          - heading "Varel" [level=3] [ref=f17e192]
+          - text: Personal project · Live
+          - paragraph [ref=f17e193]: My own watch e-commerce — Casio, Q&Q and more
+          - paragraph [ref=f17e194]: "Built end-to-end: Medusa v2 headless backend, Next.js 15 storefront, self-hosted on Dokploy. Handles catalog, cart, orders, and email notifications."
+          - generic [ref=f17e195]:
+            - generic [ref=f17e196]: Medusa v2
+            - generic [ref=f17e197]: Next.js 15
+            - generic [ref=f17e198]: PostgreSQL
+            - generic [ref=f17e199]: Redis
+            - generic [ref=f17e200]: Cloudflare R2
+            - generic [ref=f17e201]: Dokploy
+        - generic [ref=f17e204]:
+          - generic [ref=f17e205]:
+            - generic [ref=f17e206]: PAYLOAD_02
+            - generic "Private — NDA" [ref=f17e207]:
+              - generic [ref=f17e208]:
+                - img [ref=f17e209]
+                - text: NDA
+          - heading "Alher Distribuidora" [level=3] [ref=f17e212]
+          - text: Client project · Private
+          - paragraph [ref=f17e213]: Stock control system with thermal ticket printing
+          - paragraph [ref=f17e214]: "Internal software for a distributor: product inventory, movement tracking, and direct thermal ticket printing. Built end-to-end solo."
+          - generic [ref=f17e215]:
+            - generic [ref=f17e216]: NestJS
+            - generic [ref=f17e217]: Next.js
+            - generic [ref=f17e218]: PostgreSQL
+            - generic [ref=f17e219]: React Query
+            - generic [ref=f17e220]: Zustand
+        - generic [ref=f17e223]:
+          - generic [ref=f17e224]:
+            - generic [ref=f17e225]: PAYLOAD_03
+            - generic "Private — NDA" [ref=f17e226]:
+              - generic [ref=f17e227]:
+                - img [ref=f17e228]
+                - text: NDA
+          - heading "Gastito" [level=3] [ref=f17e231]
+          - text: Personal project
+          - paragraph [ref=f17e232]: AI-powered personal expense tracker
+          - paragraph [ref=f17e233]: Log expenses by photo, text, or PDF. Claude + Gemini extract amounts and categories automatically. Push notifications for budget alerts. Built with Next.js and Supabase.
+          - generic [ref=f17e234]:
+            - generic [ref=f17e235]: Next.js
+            - generic [ref=f17e236]: Supabase
+            - generic [ref=f17e237]: Claude AI
+            - generic [ref=f17e238]: Gemini
+            - generic [ref=f17e239]: Groq
+            - generic [ref=f17e240]: OCR
+            - generic [ref=f17e241]: Web Push
+      - generic [ref=f17e245]:
+        - generic [ref=f17e246]:
+          - generic [ref=f17e247]:
+            - heading "CRM Platform" [level=3] [ref=f17e248]
+            - generic [ref=f17e249]: // Various clients · Private
+          - paragraph [ref=f17e250]: Designed and built several CRM systems from scratch with Meta (Facebook/Instagram) and WhatsApp Business API integrations. Automated lead capture, conversation flows, and contact management.
+          - generic [ref=f17e251]:
+            - generic [ref=f17e252]: NestJS
+            - generic [ref=f17e253]: React
+            - generic [ref=f17e254]: WhatsApp API
+            - generic [ref=f17e255]: Meta API
+            - generic [ref=f17e256]: MongoDB
+        - generic "Private — NDA" [ref=f17e257]:
+          - img [ref=f17e258]
+          - text: NDA
+    - generic [ref=f17e262]:
+      - generic [ref=f17e264]:
+        - generic [ref=f17e265]:
+          - generic [ref=f17e266]:
+            - img [ref=f17e267]
+            - text: OP_03
+          - generic [ref=f17e274]: // ARSENAL
+        - heading "Tech stack" [level=2] [ref=f17e275]:
+          - generic [ref=f17e276]:
+            - generic [ref=f17e277]: Tech stack
+            - text: Tech stack
+      - generic [ref=f17e278]:
+        - generic [ref=f17e281]:
+          - generic [ref=f17e282]:
+            - generic [ref=f17e283]: Backend
+            - generic [ref=f17e284]: "[06]"
+          - generic [ref=f17e285]:
+            - generic [ref=f17e286]: NestJS
+            - generic [ref=f17e287]: Node.js
+            - generic [ref=f17e288]: PostgreSQL
+            - generic [ref=f17e289]: MongoDB
+            - generic [ref=f17e290]:
+              - generic [ref=f17e291]: D
+              - text: DDD
+            - generic [ref=f17e292]:
+              - generic [ref=f17e293]: RA
+              - text: REST APIs
+        - generic [ref=f17e296]:
+          - generic [ref=f17e297]:
+            - generic [ref=f17e298]: Frontend
+            - generic [ref=f17e299]: "[09]"
+          - generic [ref=f17e300]:
+            - generic [ref=f17e301]: Next.js
+            - generic [ref=f17e302]: React
+            - generic [ref=f17e303]: TypeScript
+            - generic [ref=f17e304]: Redux Toolkit
+            - generic [ref=f17e305]: Tailwind CSS
+            - generic [ref=f17e306]:
+              - generic [ref=f17e307]: Z
+              - text: Zustand
+            - generic [ref=f17e308]: React Query
+            - generic [ref=f17e309]: shadcn/ui
+            - generic [ref=f17e310]: Figma
+        - generic [ref=f17e313]:
+          - generic [ref=f17e314]:
+            - generic [ref=f17e315]: Cloud & DevOps
+            - generic [ref=f17e316]: "[05]"
+          - generic [ref=f17e317]:
+            - generic [ref=f17e318]: AWS
+            - generic [ref=f17e319]: Docker
+            - generic [ref=f17e320]: Docker Compose
+            - generic [ref=f17e321]:
+              - generic [ref=f17e322]: D
+              - text: Dokploy
+            - generic [ref=f17e323]:
+              - generic [ref=f17e324]: C
+              - text: CI/CD
+        - generic [ref=f17e327]:
+          - generic [ref=f17e328]:
+            - generic [ref=f17e329]: Soft Skills
+            - generic [ref=f17e330]: "[05]"
+          - generic [ref=f17e331]:
+            - generic [ref=f17e332]:
+              - generic [ref=f17e333]: TO
+              - text: Technical Ownership
+            - generic [ref=f17e334]:
+              - generic [ref=f17e335]: SD
+              - text: System Design
+            - generic [ref=f17e336]:
+              - generic [ref=f17e337]: PS
+              - text: Problem Solving
+            - generic [ref=f17e338]:
+              - generic [ref=f17e339]: TC
+              - text: Team Collaboration
+            - generic [ref=f17e340]:
+              - generic [ref=f17e341]: EB
+              - text: English B2
+    - generic [ref=f17e343]:
+      - generic [ref=f17e345]:
+        - generic [ref=f17e346]:
+          - generic [ref=f17e347]:
+            - img [ref=f17e348]
+            - text: OP_04
+          - generic [ref=f17e355]: // LOGS
+        - heading "Work history" [level=2] [ref=f17e356]:
+          - generic [ref=f17e357]:
+            - generic [ref=f17e358]: Work history
+            - text: Work history
+      - generic [ref=f17e359]:
+        - generic [ref=f17e366]:
+          - generic [ref=f17e367]:
+            - heading "Mid-level Software Developer @ Global Assist" [level=3] [ref=f17e368]
+            - generic [ref=f17e373]: Aug 2024 — Present
+          - list [ref=f17e374]:
+            - listitem [ref=f17e375]:
+              - generic [ref=f17e376]: ">"
+              - text: Migrated the entire backend architecture to DDD — making a legacy system maintainable and extensible.
+            - listitem [ref=f17e377]:
+              - generic [ref=f17e378]: ">"
+              - text: Built a parallel MongoDB database to handle sessions and real-time notifications without loading the main system.
+            - listitem [ref=f17e379]:
+              - generic [ref=f17e380]: ">"
+              - text: Replaced the old component library with shadcn/ui and rebuilt dynamic dashboards with NestJS + React + WebSockets.
+            - listitem [ref=f17e381]:
+              - generic [ref=f17e382]: ">"
+              - text: Implemented backend monitoring with Prometheus via interceptors.
+            - listitem [ref=f17e383]:
+              - generic [ref=f17e384]: ">"
+              - text: "Owned deployment: EC2, Secrets Manager, Docker, Dokploy — zero-downtime pipelines."
+        - generic [ref=f17e391]:
+          - generic [ref=f17e392]:
+            - heading "Frontend Developer @ Mayeutic" [level=3] [ref=f17e393]
+            - generic [ref=f17e395]: Nov 2023 — Jan 2024
+          - list [ref=f17e396]:
+            - listitem [ref=f17e397]:
+              - generic [ref=f17e398]: ">"
+              - text: Built the BackOffice admin panel from scratch — no handoff, just a design and a deadline.
+            - listitem [ref=f17e399]:
+              - generic [ref=f17e400]: ">"
+              - text: Refactored legacy code while shipping new features without breaking existing flows.
+            - listitem [ref=f17e401]:
+              - generic [ref=f17e402]: ">"
+              - text: Matched the product's design language across every new screen.
+        - generic [ref=f17e408]:
+          - generic [ref=f17e409]:
+            - heading "Software Developer Intern @ Moove-it / Qubika" [level=3] [ref=f17e410]
+            - generic [ref=f17e412]: Apr 2021 — Nov 2022
+          - list [ref=f17e413]:
+            - listitem [ref=f17e414]:
+              - generic [ref=f17e415]: ">"
+              - text: "Worked across the stack: JavaScript, React, Python, Django REST."
+            - listitem [ref=f17e416]:
+              - generic [ref=f17e417]: ">"
+              - text: Contributed to the company's public website alongside senior engineers.
+            - listitem [ref=f17e418]:
+              - generic [ref=f17e419]: ">"
+              - text: Paired with senior developers from week one — zero hand-holding.
+    - generic [ref=f17e421]:
+      - generic [ref=f17e423]:
+        - generic [ref=f17e424]:
+          - generic [ref=f17e425]:
+            - img [ref=f17e426]
+            - text: OP_05
+          - generic [ref=f17e433]: // INTEL
+        - heading "Education" [level=2] [ref=f17e434]:
+          - generic [ref=f17e435]:
+            - generic [ref=f17e436]: Education
+            - text: Education
+      - generic [ref=f17e437]:
+        - generic [ref=f17e438]:
+          - generic [ref=f17e439]: Academic
+          - generic [ref=f17e441]:
+            - generic [ref=f17e444]:
+              - text: Mar 2025 — Present
+              - heading "Computer Engineering" [level=3] [ref=f17e445]
+              - paragraph [ref=f17e446]: FING, UDELAR
+            - generic [ref=f17e449]:
+              - text: Feb 2020 — Nov 2022
+              - heading "Technical Education in IT — Software Development" [level=3] [ref=f17e450]
+              - paragraph [ref=f17e451]: ÁNIMA · Bachillerato Tecnológico TIC
+        - generic [ref=f17e452]:
+          - generic [ref=f17e453]: Certifications
+          - generic [ref=f17e455]:
+            - generic [ref=f17e458]:
+              - img [ref=f17e461]
+              - generic [ref=f17e463]:
+                - paragraph [ref=f17e464]: Software Development Internship Completion
+                - paragraph [ref=f17e465]: Moove-it
+              - text: Done
+            - generic [ref=f17e468]:
+              - img [ref=f17e471]
+              - generic [ref=f17e473]:
+                - paragraph [ref=f17e474]: "Complete Web & Mobile Designer: UI/UX, Figma +more"
+                - paragraph [ref=f17e475]: Udemy
+              - text: Done
+            - generic [ref=f17e478]:
+              - generic [ref=f17e482]:
+                - paragraph [ref=f17e483]: Microservices Architecture & Implementation
+                - paragraph [ref=f17e484]: Udemy
+              - text: In Progress
+    - generic [ref=f17e486]:
+      - generic [ref=f17e488]:
+        - generic [ref=f17e489]:
+          - generic [ref=f17e490]:
+            - img [ref=f17e491]
+            - text: OP_06
+          - generic [ref=f17e498]: // TRANSMIT
+        - heading "Ready to ship together." [level=2] [ref=f17e499]:
+          - generic [ref=f17e500]:
+            - generic [ref=f17e501]: Ready to ship together.
+            - text: Ready to ship together.
+      - paragraph [ref=f17e503]: Open to full-time roles and freelance projects. If you have something interesting — distributed systems, DDD, or anything with serious backend depth — let's talk.
+      - generic [ref=f17e506]:
+        - generic [ref=f17e507]:
+          - img [ref=f17e508]
+          - text: transmit.sh
+          - generic [ref=f17e515]: 4 channels open
+        - generic [ref=f17e516]:
+          - link "$ mail lucascurtoo@gmail.com Send an email" [ref=f17e517] [cursor=pointer]:
+            - /url: mailto:lucascurtoo@gmail.com
+            - generic [ref=f17e518]: $
+            - generic [ref=f17e519]: mail
+            - generic [ref=f17e520]: lucascurtoo@gmail.com
+            - generic [ref=f17e521]:
+              - generic [ref=f17e522]: Send an email
+              - img [ref=f17e523]
+          - link "$ open linkedin.com/in/lucas-curto Connect on LinkedIn" [ref=f17e525] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/lucas-curto/
+            - generic [ref=f17e526]: $
+            - generic [ref=f17e527]: open
+            - generic [ref=f17e528]: linkedin.com/in/lucas-curto
+            - generic [ref=f17e529]:
+              - generic [ref=f17e530]: Connect on LinkedIn
+              - img [ref=f17e531]
+          - link "$ clone github.com/lucascurto View GitHub" [ref=f17e533] [cursor=pointer]:
+            - /url: https://github.com/lucascurto
+            - generic [ref=f17e534]: $
+            - generic [ref=f17e535]: clone
+            - generic [ref=f17e536]: github.com/lucascurto
+            - generic [ref=f17e537]:
+              - generic [ref=f17e538]: View GitHub
+              - img [ref=f17e539]
+          - link "$ call +598 91886037 Call / WhatsApp" [ref=f17e541] [cursor=pointer]:
+            - /url: tel:+59891886037
+            - generic [ref=f17e542]: $
+            - generic [ref=f17e543]: call
+            - generic [ref=f17e544]: +598 91886037
+            - generic [ref=f17e545]:
+              - generic [ref=f17e546]: Call / WhatsApp
+              - img [ref=f17e547]
+      - generic [ref=f17e549]:
+        - generic [ref=f17e550]:
+          - img [ref=f17e551]
+          - text: System online
+        - generic [ref=f17e558]: Lucas Curto · 2026
+        - generic [ref=f17e559]: Built with Next.js & Tailwind
+  - generic:
+    - generic:
+      - generic:
+        - generic: ▌
+        - text: HACK THE SYSTEM
+      - generic:
+        - generic: ▌
+        - text: BUILT END TO END
+      - generic:
+        - generic: ▌
+        - text: BACKEND // FRONTEND // INFRA
+      - generic:
+        - generic: ▌
+        - text: ONE DEVELOPER
+      - generic:
+        - generic: ▌
+        - text: SHIP IT
+      - generic:
+        - generic: ▌
+        - text: NO MASTERS
+      - generic:
+        - generic: ▌
+        - text: HACK THE SYSTEM
+      - generic:
+        - generic: ▌
+        - text: BUILT END TO END
+      - generic:
+        - generic: ▌
+        - text: BACKEND // FRONTEND // INFRA
+      - generic:
+        - generic: ▌
+        - text: ONE DEVELOPER
+      - generic:
+        - generic: ▌
+        - text: SHIP IT
+      - generic:
+        - generic: ▌
+        - text: NO MASTERS

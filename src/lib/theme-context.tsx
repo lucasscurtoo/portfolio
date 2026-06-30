@@ -7,13 +7,17 @@ type ThemeCtx = { theme: Theme; toggle: () => void };
 
 const Ctx = createContext<ThemeCtx>({ theme: "dark", toggle: () => {} });
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
+function initialTheme(): Theme {
+  if (typeof document !== "undefined") {
+    const attr = document.documentElement.getAttribute("data-theme");
+    if (attr === "light" || attr === "dark") return attr;
+  }
+  return "dark";
+}
 
-  useEffect(() => {
-    const saved = localStorage.getItem("theme") as Theme | null;
-    if (saved === "light" || saved === "dark") setTheme(saved);
-  }, []);
+export function ThemeProvider({ children }: { children: ReactNode }) {
+  // initialized from the data-theme the inline boot script already applied (no FOUC)
+  const [theme, setTheme] = useState<Theme>(initialTheme);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);

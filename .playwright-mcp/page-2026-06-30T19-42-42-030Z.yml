@@ -1,0 +1,373 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - img
+  - complementary [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Explorer
+      - generic [ref=e5]: ···
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - generic [ref=e10]: PORTFOLIO
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - img [ref=e13]
+          - generic [ref=e15]: src
+        - generic [ref=e16]:
+          - button "TS about.ts" [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: TS
+            - generic [ref=e19]: about.ts
+          - button "TS projects.ts" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]: TS
+            - generic [ref=e22]: projects.ts
+          - button "TS skills.ts" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: TS
+            - generic [ref=e25]: skills.ts
+          - button "TS experience.ts" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27]: TS
+            - generic [ref=e28]: experience.ts
+          - button "TS education.ts" [ref=e29] [cursor=pointer]:
+            - generic [ref=e30]: TS
+            - generic [ref=e31]: education.ts
+          - button "TS contact.ts" [ref=e32] [cursor=pointer]:
+            - generic [ref=e33]: TS
+            - generic [ref=e34]: contact.ts
+      - generic [ref=e35]:
+        - generic [ref=e36]: README.md
+        - generic [ref=e37]: package.json
+    - generic [ref=e39]: 6 files · 0 problems
+  - generic [ref=e40]:
+    - banner [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e48]: lucas-curto — portfolio
+        - navigation [ref=e49]:
+          - button "TS about.ts" [ref=e50] [cursor=pointer]:
+            - generic [ref=e52]: TS
+            - text: about.ts
+          - button "TS projects.ts" [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]: TS
+            - text: projects.ts
+          - button "TS skills.ts" [ref=e55] [cursor=pointer]:
+            - generic [ref=e56]: TS
+            - text: skills.ts
+          - button "TS experience.ts" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: TS
+            - text: experience.ts
+          - button "TS education.ts" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]: TS
+            - text: education.ts
+          - button "TS contact.ts" [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]: TS
+            - text: contact.ts
+        - button "Contacto" [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+          - text: Contacto
+    - main [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e74]: Montevideo, Uruguay
+            - heading "Lucas Curto" [level=1] [ref=e75]
+            - paragraph [ref=e76]: Desarrollador Full-Stack · orientado al backend
+            - paragraph [ref=e77]: Domino el backend. Construyo el frontend. Manejo la infra — NestJS, Next.js, AWS. Un desarrollador, de punta a punta.
+            - generic [ref=e80]: Autodidacta · Builder
+            - generic [ref=e81]:
+              - button "Ver Mi Trabajo" [ref=e82] [cursor=pointer]
+              - button "Contacto" [ref=e83] [cursor=pointer]
+          - generic [ref=e84]:
+            - generic [ref=e89]: lucas-curto.ts
+            - generic [ref=e91]: //
+        - button "scroll down" [ref=e92] [cursor=pointer]:
+          - img [ref=e93]
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]: // 01. Sobre mí
+          - heading "Cómo trabajo" [level=2] [ref=e100]
+          - paragraph [ref=e101]: Empiezo por el dominio, no por el framework. Antes de escribir una línea de código, entiendo el problema de negocio — luego construyo la API, el frontend y la infraestructura alrededor. En mi rol actual entregué 3 sistemas completos en producción, de punta a punta, aplicando DDD con NestJS y desplegando en AWS.
+          - generic [ref=e104]: Siempre aprendiendo. Siempre construyendo.
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: Ubicación
+            - generic [ref=e108]: Montevideo, Uruguay
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: Enfoque
+            - generic [ref=e111]: DDD · Full-stack
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Inglés
+            - generic [ref=e114]: B2 — nivel laboral
+          - generic [ref=e115]:
+            - paragraph [ref=e116]: Estado
+            - generic [ref=e118]: Abierto a oportunidades
+      - generic [ref=e121]:
+        - generic [ref=e122]: // 02. Proyectos
+        - heading "Cosas que construí" [level=2] [ref=e123]
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - generic [ref=e128]:
+                  - generic [ref=e129]: "01."
+                  - heading "Varel" [level=3] [ref=e130]
+                - paragraph [ref=e131]: Proyecto personal · En vivo
+              - link [ref=e133] [cursor=pointer]:
+                - /url: https://varel.uy
+                - img [ref=e134]
+            - paragraph [ref=e138]: Mi propio e-commerce de relojes — Casio, Q&Q y más
+            - paragraph [ref=e139]: "Construido de punta a punta: backend headless con Medusa v2, storefront en Next.js 15, self-hosted en Dokploy. Gestiona catálogo, carrito, pedidos y notificaciones por email."
+            - generic [ref=e140]:
+              - generic [ref=e141]: Medusa v2
+              - generic [ref=e142]: Next.js 15
+              - generic [ref=e143]: PostgreSQL
+              - generic [ref=e144]: Redis
+              - generic [ref=e145]: Cloudflare R2
+              - generic [ref=e146]: Dokploy
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e149]:
+                - generic [ref=e150]:
+                  - generic [ref=e151]: "02."
+                  - heading "Alher Distribuidora" [level=3] [ref=e152]
+                - paragraph [ref=e153]: Proyecto cliente · Privado
+              - img [ref=e156]
+            - paragraph [ref=e159]: Sistema de control de stock con impresión de tickets térmicos
+            - paragraph [ref=e160]: "Software interno para una distribuidora: inventario de productos, registro de movimientos e impresión directa de tickets térmicos. Full-stack construido solo."
+            - generic [ref=e161]:
+              - generic [ref=e162]: NestJS
+              - generic [ref=e163]: Next.js
+              - generic [ref=e164]: PostgreSQL
+              - generic [ref=e165]: React Query
+              - generic [ref=e166]: Zustand
+          - generic [ref=e167]:
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - generic [ref=e171]: "03."
+                - heading "Gastito" [level=3] [ref=e172]
+              - paragraph [ref=e173]: Proyecto personal
+            - paragraph [ref=e174]: Control de gastos personales con IA
+            - paragraph [ref=e175]: Registrá gastos por foto, texto o PDF. Claude + Gemini extraen montos y categorías automáticamente. Notificaciones push para alertas de presupuesto. Construido con Next.js y Supabase.
+            - generic [ref=e176]:
+              - generic [ref=e177]: Next.js
+              - generic [ref=e178]: Supabase
+              - generic [ref=e179]: Claude AI
+              - generic [ref=e180]: Gemini
+              - generic [ref=e181]: Groq
+              - generic [ref=e182]: OCR
+              - generic [ref=e183]: Web Push
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187]:
+                  - generic [ref=e188]: "04."
+                  - heading "CRM Platform" [level=3] [ref=e189]
+                - paragraph [ref=e190]: Varios clientes · Privado
+              - img [ref=e193]
+            - paragraph [ref=e196]: Múltiples CRMs desarrollados — integraciones Meta y WhatsApp
+            - paragraph [ref=e197]: Diseñé y construí varios CRMs desde cero con integraciones de Meta (Facebook/Instagram) y WhatsApp Business API. Captura automatizada de leads, flujos de conversación y gestión de contactos.
+            - generic [ref=e198]:
+              - generic [ref=e199]: NestJS
+              - generic [ref=e200]: React
+              - generic [ref=e201]: WhatsApp API
+              - generic [ref=e202]: Meta API
+              - generic [ref=e203]: MongoDB
+              - generic [ref=e204]: WebSockets
+      - generic [ref=e206]:
+        - generic [ref=e207]: // 03. Skills
+        - heading "Stack tecnológico" [level=2] [ref=e208]
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]: B
+              - generic [ref=e213]:
+                - heading "Backend" [level=3] [ref=e214]
+                - generic [ref=e215]: 6 items
+            - generic [ref=e216]:
+              - generic [ref=e217]: NestJS
+              - generic [ref=e218]: Node.js
+              - generic [ref=e219]: PostgreSQL
+              - generic [ref=e220]: MongoDB
+              - generic [ref=e221]: DDD
+              - generic [ref=e222]: REST APIs
+          - generic [ref=e223]:
+            - generic [ref=e224]:
+              - generic [ref=e225]: F
+              - generic [ref=e226]:
+                - heading "Frontend" [level=3] [ref=e227]
+                - generic [ref=e228]: 9 items
+            - generic [ref=e229]:
+              - generic [ref=e230]: Next.js
+              - generic [ref=e231]: React
+              - generic [ref=e232]: TypeScript
+              - generic [ref=e233]: Redux Toolkit
+              - generic [ref=e234]: Tailwind CSS
+              - generic [ref=e235]: Zustand
+              - generic [ref=e236]: React Query
+              - generic [ref=e237]: shadcn/ui
+              - generic [ref=e238]: Figma
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - generic [ref=e241]: C
+              - generic [ref=e242]:
+                - heading "Cloud & DevOps" [level=3] [ref=e243]
+                - generic [ref=e244]: 5 items
+            - generic [ref=e245]:
+              - generic [ref=e246]: AWS
+              - generic [ref=e247]: Docker
+              - generic [ref=e248]: Docker Compose
+              - generic [ref=e249]: Dokploy
+              - generic [ref=e250]: CI/CD
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - generic [ref=e253]: S
+              - generic [ref=e254]:
+                - heading "Habilidades Blandas" [level=3] [ref=e255]
+                - generic [ref=e256]: 5 items
+            - generic [ref=e257]:
+              - generic [ref=e258]: Technical Ownership
+              - generic [ref=e259]: System Design
+              - generic [ref=e260]: Problem Solving
+              - generic [ref=e261]: Team Collaboration
+              - generic [ref=e262]: English B2
+      - generic [ref=e264]:
+        - generic [ref=e265]: // 04. Experiencia
+        - heading "Historial laboral" [level=2] [ref=e266]
+        - generic [ref=e269]:
+          - generic [ref=e272]:
+            - generic [ref=e273]:
+              - generic [ref=e274]:
+                - heading "Desarrollador de Software Semi-Senior" [level=3] [ref=e275]
+                - paragraph [ref=e276]: Global Assist
+              - generic [ref=e277]: Ago 2024 — Presente
+            - list [ref=e278]:
+              - listitem [ref=e279]:
+                - generic [ref=e280]: ›
+                - text: Migré toda la arquitectura backend a DDD — convirtiendo un sistema legacy en algo mantenible y extensible.
+              - listitem [ref=e281]:
+                - generic [ref=e282]: ›
+                - text: Construí una base de datos paralela en MongoDB para manejar sesiones y notificaciones en tiempo real sin cargar el sistema principal.
+              - listitem [ref=e283]:
+                - generic [ref=e284]: ›
+                - text: Reemplacé la librería de componentes con shadcn/ui y reconstruí dashboards dinámicos con NestJS + React + WebSockets.
+              - listitem [ref=e285]:
+                - generic [ref=e286]: ›
+                - text: Implementé monitoreo del backend con Prometheus mediante interceptors.
+              - listitem [ref=e287]:
+                - generic [ref=e288]: ›
+                - text: "Lideré el deploy completo: EC2, Secrets Manager, Docker, Dokploy — pipelines sin downtime."
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - heading "Desarrollador Frontend" [level=3] [ref=e294]
+                - paragraph [ref=e295]: Mayeutic
+              - generic [ref=e296]: Nov 2023 — Ene 2024
+            - list [ref=e297]:
+              - listitem [ref=e298]:
+                - generic [ref=e299]: ›
+                - text: Construí el panel de administración BackOffice desde cero — sin handoff, solo un diseño y una fecha límite.
+              - listitem [ref=e300]:
+                - generic [ref=e301]: ›
+                - text: Refactoricé código legacy mientras entregaba nuevas funcionalidades sin romper flujos existentes.
+              - listitem [ref=e302]:
+                - generic [ref=e303]: ›
+                - text: Mantuve el lenguaje visual del producto en cada pantalla nueva.
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - generic [ref=e308]:
+                - heading "Practicante de Desarrollo de Software" [level=3] [ref=e309]
+                - paragraph [ref=e310]: Moove-it / Qubika
+              - generic [ref=e311]: Abr 2021 — Nov 2022
+            - list [ref=e312]:
+              - listitem [ref=e313]:
+                - generic [ref=e314]: ›
+                - text: "Trabajé en todo el stack: JavaScript, React, Python, Django REST."
+              - listitem [ref=e315]:
+                - generic [ref=e316]: ›
+                - text: Contribuí al sitio web público de la empresa junto a ingenieros senior.
+              - listitem [ref=e317]:
+                - generic [ref=e318]: ›
+                - text: Hice pair con seniors desde la primera semana — sin período de adaptación.
+      - generic [ref=e321]:
+        - generic [ref=e322]:
+          - generic [ref=e323]: // 05. Educación
+          - heading "Educación" [level=2] [ref=e324]
+          - generic [ref=e325]:
+            - generic [ref=e326]:
+              - generic [ref=e327]:
+                - heading "Ingeniería en Computación" [level=3] [ref=e328]
+                - generic [ref=e329]: Mar 2025 — Presente
+              - paragraph [ref=e330]: FING, UDELAR
+              - generic [ref=e331]: Actual
+            - generic [ref=e333]:
+              - generic [ref=e334]:
+                - heading "Bachillerato Tecnológico TIC — Desarrollo de Software" [level=3] [ref=e335]
+                - generic [ref=e336]: Feb 2020 — Nov 2022
+              - paragraph [ref=e337]: ÁNIMA · Bachillerato Tecnológico TIC
+        - generic [ref=e338]:
+          - generic [ref=e339]: // Certificaciones
+          - heading "Certificaciones" [level=2] [ref=e340]
+          - generic [ref=e341]:
+            - generic [ref=e342]:
+              - img [ref=e344]
+              - generic [ref=e346]:
+                - heading "Finalización de Pasantía en Desarrollo de Software" [level=3] [ref=e347]
+                - paragraph [ref=e348]: Moove-it · Completado
+            - generic [ref=e349]:
+              - img [ref=e351]
+              - generic [ref=e353]:
+                - 'heading "Diseñador Web & Mobile Completo: UI/UX, Figma y más" [level=3] [ref=e354]'
+                - paragraph [ref=e355]: Udemy · Completado
+            - generic [ref=e356]:
+              - img [ref=e358]
+              - generic [ref=e360]:
+                - heading "Arquitectura e Implementación de Microservicios" [level=3] [ref=e361]
+                - paragraph [ref=e362]: Udemy · En progreso
+      - generic [ref=e364]:
+        - generic [ref=e365]: // 06. Contacto
+        - heading "Listo para construir juntos." [level=2] [ref=e366]
+        - paragraph [ref=e367]: Abierto a oportunidades full-time y proyectos freelance. Si tenés algo interesante — sistemas distribuidos, DDD, o cualquier cosa con un backend serio detrás — hablemos.
+        - generic [ref=e368]:
+          - link "Enviar un email lucascurtoo@gmail.com" [ref=e369] [cursor=pointer]:
+            - /url: mailto:lucascurtoo@gmail.com
+            - generic [ref=e370]:
+              - paragraph [ref=e371]: Enviar un email
+              - paragraph [ref=e372]: lucascurtoo@gmail.com
+            - img [ref=e374]
+          - link "LinkedIn linkedin.com/in/lucas-curto" [ref=e376] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/lucas-curto/
+            - generic [ref=e377]:
+              - paragraph [ref=e378]: LinkedIn
+              - paragraph [ref=e379]: linkedin.com/in/lucas-curto
+            - img [ref=e381]
+          - link "GitHub github.com/lucascurto" [ref=e383] [cursor=pointer]:
+            - /url: https://github.com/lucascurto
+            - generic [ref=e384]:
+              - paragraph [ref=e385]: GitHub
+              - paragraph [ref=e386]: github.com/lucascurto
+            - img [ref=e388]
+          - link "Llamar / WhatsApp +598 91886037" [ref=e390] [cursor=pointer]:
+            - /url: https://wa.me/59891886037
+            - generic [ref=e391]:
+              - paragraph [ref=e392]: Llamar / WhatsApp
+              - paragraph [ref=e393]: +598 91886037
+            - img [ref=e395]
+  - contentinfo [ref=e397]:
+    - generic [ref=e398]:
+      - generic [ref=e399]:
+        - img [ref=e400]
+        - text: main
+      - generic [ref=e405]:
+        - text: ✓ 0
+        - generic [ref=e406]: ⚠ 0
+      - generic [ref=e407]: about.ts
+    - generic [ref=e408]:
+      - button "toggle language" [ref=e409] [cursor=pointer]:
+        - generic [ref=e410]: "lang:"
+        - generic [ref=e411]: "\"es\""
+      - button "toggle theme" [ref=e412] [cursor=pointer]:
+        - img [ref=e413]
+      - generic [ref=e419]: "Spaces: 2"
+      - generic [ref=e420]: UTF-8
+      - generic [ref=e421]: Ln 1, Col 1
+      - generic [ref=e422]:
+        - text: TypeScript
+        - generic [ref=e423]: React
+  - alert [ref=e424]
