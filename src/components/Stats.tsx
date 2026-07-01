@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
 import SectionHeader from "./ui/SectionHeader";
 import Panel from "./ui/Panel";
+import ContribGraph from "./ContribGraph";
 import { useLang } from "@/lib/lang-context";
 
 type Lang = { name: string; bytes: number; pct: number };
@@ -62,6 +63,8 @@ export default function Stats() {
             {t.note}
           </p>
         </Reveal>
+
+        <ContribGraph />
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-4">
           {/* metric counters */}
