@@ -8,8 +8,8 @@ export default function Ticker() {
 
   const slogans =
     lang === "en"
-      ? ["HACK THE SYSTEM", "BUILT END TO END", "BACKEND // FRONTEND // INFRA", "ONE DEVELOPER", "SHIP IT", "NO MASTERS"]
-      : ["HACKEÁ EL SISTEMA", "DE PUNTA A PUNTA", "BACKEND // FRONTEND // INFRA", "UN DESARROLLADOR", "A PRODUCCIÓN", "SIN AMOS"];
+      ? ["BUILT END TO END", "BACKEND // FRONTEND // INFRA", "ONE DEVELOPER", "SHIP IT"]
+      : ["DE PUNTA A PUNTA", "BACKEND // FRONTEND // INFRA", "UN DESARROLLADOR", "A PRODUCCIÓN"];
 
   // duplicated so the -50% marquee loop is seamless
   const strip = [...slogans, ...slogans];
