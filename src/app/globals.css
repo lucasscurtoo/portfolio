@@ -81,16 +81,7 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* halftone dither — dense dot screen, like screen-printed Hacker-HUD posters */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: radial-gradient(var(--halftone) 0.8px, transparent 1px);
-  background-size: 5px 5px;
-  pointer-events: none;
-  z-index: 0;
-}
+/* dot-matrix field is rendered by the DotField canvas (unified, animated) */
 
 /* heavy CRT scanlines */
 body::after {

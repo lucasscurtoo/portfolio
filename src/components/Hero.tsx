@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { PROFILE, COPY, TERMINAL_LINES } from "@/lib/data";
 import Skull from "./Skull";
-import DotBot from "./DotBot";
 import Decrypt from "./ui/Decrypt";
 
 type LineType = { type: string; text?: string; key?: string; val?: string; rest?: string };
@@ -195,11 +194,8 @@ export default function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.65, delay: 0.3 }}
-            className="lg:order-none order-last flex flex-col items-center gap-8 min-w-0 w-full"
+            className="lg:order-none order-last min-w-0 w-full"
           >
-            <div className="grid place-items-center pt-2">
-              <DotBot size={220} />
-            </div>
             <div
               className="hud-card hud-tab overflow-hidden w-full"
               style={{

@@ -3,6 +3,7 @@ import "./globals.css";
 import { LangProvider } from "@/lib/lang-context";
 import { ThemeProvider } from "@/lib/theme-context";
 import AuroraBackground from "@/components/AuroraBackground";
+import DotField from "@/components/DotField";
 import Ticker from "@/components/Ticker";
 import HudShell from "@/components/HudShell";
 
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <LangProvider>
             <AuroraBackground />
+            <DotField />
             <HudShell />
             {children}
             <Ticker />

@@ -1,7 +1,5 @@
 "use client";
 
-import Skull from "./Skull";
-
 export default function AuroraBackground() {
   return (
     <div
@@ -9,9 +7,9 @@ export default function AuroraBackground() {
       className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
       style={{ opacity: "var(--orb-opacity)" }}
     >
-      {/* magenta glow — top-left */}
+      {/* green glow — top-left */}
       <div
-        className="absolute rounded-full blur-[150px] opacity-[0.18] animate-orb-1"
+        className="absolute rounded-full blur-[150px] opacity-[0.16] animate-orb-1"
         style={{
           width: "560px",
           height: "560px",
@@ -20,9 +18,9 @@ export default function AuroraBackground() {
           background: "radial-gradient(circle, var(--accent), transparent 70%)",
         }}
       />
-      {/* magenta glow — bottom-right */}
+      {/* green glow — bottom-right */}
       <div
-        className="absolute rounded-full blur-[180px] opacity-[0.12] animate-orb-2"
+        className="absolute rounded-full blur-[180px] opacity-[0.11] animate-orb-2"
         style={{
           width: "680px",
           height: "680px",
@@ -30,12 +28,6 @@ export default function AuroraBackground() {
           right: "-200px",
           background: "radial-gradient(circle, var(--accent), transparent 70%)",
         }}
-      />
-
-      {/* giant ghost skull watermark, right side */}
-      <Skull
-        className="absolute text-[var(--text)] opacity-[0.03] -right-[6%] top-[14%] rotate-6"
-        size={620}
       />
 
       {/* continuous scan sweep */}
