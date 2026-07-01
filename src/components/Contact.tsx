@@ -4,6 +4,7 @@ import Reveal from "./Reveal";
 import SectionHeader from "./ui/SectionHeader";
 import Panel from "./ui/Panel";
 import Skull from "./Skull";
+import LogoMark from "./LogoMark";
 import { useLang } from "@/lib/lang-context";
 import { PROFILE, COPY } from "@/lib/data";
 
@@ -66,9 +67,7 @@ export default function Contact() {
         {/* footer */}
         <footer className="mt-16 border-t-2 border-[var(--accent)] pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-center sm:text-left">
           <div className="flex items-center justify-center sm:justify-start gap-2.5">
-            <span className="grid place-items-center w-[30px] h-[30px] bg-[var(--accent)] text-[var(--accent-text)]">
-              <Skull size={18} />
-            </span>
+            <LogoMark size={32} className="text-[var(--accent)]" />
             <span className="font-display uppercase text-[18px] leading-none text-[var(--text)]">Lucas Curto</span>
           </div>
           <div className="flex flex-col sm:items-end gap-1 font-mono text-[10.5px] uppercase tracking-[0.14em] text-[var(--faint)]">

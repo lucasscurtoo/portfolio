@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useLang } from "@/lib/lang-context";
 import { useTheme } from "@/lib/theme-context";
 import { NAV_ITEMS, COPY } from "@/lib/data";
-import Skull from "./Skull";
+import LogoMark from "./LogoMark";
 
 function SunIcon() {
   return (
@@ -60,9 +60,10 @@ export default function Nav() {
           className="flex items-center gap-3 group"
           aria-label="Go to top"
         >
-          <span className="w-[34px] h-[34px] grid place-items-center bg-[var(--accent)] text-[var(--accent-text)] group-hover:shadow-[0_0_18px_var(--glow)] transition-all">
-            <Skull size={20} />
-          </span>
+          <LogoMark
+            size={34}
+            className="text-[var(--accent)] group-hover:drop-shadow-[0_0_10px_var(--glow)] transition-all"
+          />
           <span className="hidden sm:flex flex-col leading-none">
             <span className="font-display text-[17px] tracking-[0.04em] text-[var(--text)]">LUCAS CURTO</span>
             <span className="font-mono text-[8.5px] tracking-[0.2em] text-[var(--faint)] uppercase mt-0.5">full-stack // dev</span>
