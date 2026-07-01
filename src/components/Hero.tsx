@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { PROFILE, COPY, TERMINAL_LINES } from "@/lib/data";
 import Skull from "./Skull";
-import DotFace from "./DotFace";
+import AsciiFace from "./AsciiFace";
 import Decrypt from "./ui/Decrypt";
 
 type LineType = { type: string; text?: string; key?: string; val?: string; rest?: string };
@@ -198,7 +198,7 @@ export default function Hero() {
             className="lg:order-none order-last min-w-0 w-full flex flex-col items-center gap-7"
           >
             <div className="hidden lg:grid place-items-center">
-              <DotFace size={240} />
+              <AsciiFace size={260} />
             </div>
             <div
               className="hud-card hud-tab overflow-hidden w-full"
