@@ -5,12 +5,18 @@ import Reveal from "./Reveal";
 import SectionHeader from "./ui/SectionHeader";
 import Panel from "./ui/Panel";
 import { useLang } from "@/lib/lang-context";
+import { useTheme } from "@/lib/theme-context";
 import { SKILLS, COPY } from "@/lib/data";
+import { LOCAL_ICONS, BrandIcon } from "@/lib/brand-icons";
 
 function SkillIcon({ slug, name, size = 15 }: { slug: string | null; name: string; size?: number }) {
+  const { theme } = useTheme();
   const [failed, setFailed] = useState(!slug);
-  const initials = name.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
 
+  // brands Simple Icons dropped (e.g. AWS) — render local, currentColor = themed
+  if (slug && LOCAL_ICONS[slug]) return <BrandIcon path={LOCAL_ICONS[slug]} size={size} />;
+
+  const initials = name.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
   if (failed) {
     return (
       <span
@@ -21,14 +27,16 @@ function SkillIcon({ slug, name, size = 15 }: { slug: string | null; name: strin
       </span>
     );
   }
+  // theme-aware icon color (light icons on dark, dark icons on light)
+  const hex = theme === "light" ? "44484f" : "c9d1d9";
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={`https://cdn.simpleicons.org/${slug}/ffffff`}
+      src={`https://cdn.simpleicons.org/${slug}/${hex}`}
       alt=""
       width={size}
       height={size}
-      className="flex-shrink-0 opacity-85"
+      className="flex-shrink-0 opacity-90"
       onError={() => setFailed(true)}
     />
   );
