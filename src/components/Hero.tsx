@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useLang } from "@/lib/lang-context";
 import { PROFILE, COPY, TERMINAL_LINES } from "@/lib/data";
 import Skull from "./Skull";
+import DotFace from "./DotFace";
 import Decrypt from "./ui/Decrypt";
 
 type LineType = { type: string; text?: string; key?: string; val?: string; rest?: string };
@@ -194,8 +195,11 @@ export default function Hero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.65, delay: 0.3 }}
-            className="lg:order-none order-last min-w-0 w-full"
+            className="lg:order-none order-last min-w-0 w-full flex flex-col items-center gap-7"
           >
+            <div className="hidden lg:grid place-items-center">
+              <DotFace size={240} />
+            </div>
             <div
               className="hud-card hud-tab overflow-hidden w-full"
               style={{
