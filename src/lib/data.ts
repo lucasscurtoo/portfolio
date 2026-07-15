@@ -7,7 +7,7 @@ export const PROFILE = {
   location: "Montevideo, Uruguay",
   email: "lucascurtoo@gmail.com",
   linkedin: "https://www.linkedin.com/in/lucas-curto/",
-  github: "https://github.com/lucascurto",
+  github: "https://github.com/lucasscurtoo",
   phone: "+598 91886037",
   tagline: {
     en: "I own the backend. I ship the frontend. I run the infra — NestJS, Next.js, AWS. One developer, end to end.",
