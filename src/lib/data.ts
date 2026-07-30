@@ -74,6 +74,38 @@ export const PROJECTS = [
     featured: true,
   },
   {
+    name: "AgenticNotch",
+    tagline: {
+      en: "The MacBook notch as a live monitor for AI coding agents",
+      es: "El notch de la MacBook como monitor de agentes de IA",
+    },
+    description: {
+      en: "macOS app in Swift/SwiftUI. When Claude Code or Codex finish a turn, the notch drops a card with what the agent did, the project and an ok/error status, plus a chime and a run history. Open-source fork of boring.notch (GPL-3.0): I built the agent layer and the signed DMG release pipeline.",
+      es: "App de macOS en Swift/SwiftUI. Cuando Claude Code o Codex terminan un turno, el notch despliega una card con qué hizo el agente, en qué proyecto y si salió bien o con error, más un chime y el historial de corridas. Fork open source de boring.notch (GPL-3.0): construí la capa de agentes y el pipeline de release con DMG firmado.",
+    },
+    tags: ["Swift", "SwiftUI", "macOS", "Claude Code", "Codex", "GPL-3.0"],
+    url: "https://github.com/lucasscurtoo/AgenticNotch",
+    github: "https://github.com/lucasscurtoo/AgenticNotch",
+    type: { en: "Open source · Live", es: "Open source · Publicado" },
+    featured: true,
+  },
+  {
+    name: "nestjs-ddd-doctor",
+    tagline: {
+      en: "Zero-dependency architecture linter for NestJS",
+      es: "Linter de arquitectura sin dependencias para NestJS",
+    },
+    description: {
+      en: "One npx run grades where a NestJS codebase leaks its layer boundaries — controllers hitting the database, business logic outside services, domain importing infrastructure — and hands the findings straight to Claude Code or Codex to fix. No install, no dependencies. Published on npm.",
+      es: "Un solo npx califica dónde una base NestJS filtra sus límites de capas — controllers que van directo a la base, lógica de negocio fuera de los services, dominio importando infraestructura — y pasa los hallazgos a Claude Code o Codex para arreglarlos. Sin instalación ni dependencias. Publicado en npm.",
+    },
+    tags: ["TypeScript", "Node.js", "NestJS", "DDD", "CLI", "npm"],
+    url: "https://github.com/lucasscurtoo/nestjs-ddd-doctor",
+    github: "https://github.com/lucasscurtoo/nestjs-ddd-doctor",
+    type: { en: "Open source · npm", es: "Open source · npm" },
+    featured: true,
+  },
+  {
     name: "CRM Platform",
     tagline: {
       en: "Multiple CRMs built — Meta & WhatsApp integrations",
