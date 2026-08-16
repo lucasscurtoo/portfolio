@@ -106,6 +106,22 @@ export const PROJECTS = [
     featured: true,
   },
   {
+    name: "microservices-k8s-case-study",
+    tagline: {
+      en: "URL shortener split into NestJS microservices on Kubernetes",
+      es: "Acortador de URLs partido en microservicios NestJS sobre Kubernetes",
+    },
+    description: {
+      en: "Case study of a URL shortener split into three NestJS services — write, read, and analytics — deployed on Kubernetes. Covers separation by responsibility, Redis caching, async messaging over NATS, StatefulSets with persistent volumes, and a shared Drizzle schema in a pnpm monorepo.",
+      es: "Case study de un acortador de URLs partido en tres servicios NestJS — escritura, lectura y analítica — desplegado en Kubernetes. Cubre separación por responsabilidad, caché con Redis, mensajería asincrónica con NATS, StatefulSets con volúmenes persistentes y un schema Drizzle compartido en un monorepo pnpm.",
+    },
+    tags: ["NestJS", "Kubernetes", "NATS", "Redis", "PostgreSQL", "Docker"],
+    url: "https://github.com/lucasscurtoo/microservices-k8s-case-study",
+    github: "https://github.com/lucasscurtoo/microservices-k8s-case-study",
+    type: { en: "Open source · Case study", es: "Open source · Case study" },
+    featured: true,
+  },
+  {
     name: "CRM Platform",
     tagline: {
       en: "Multiple CRMs built — Meta & WhatsApp integrations",
