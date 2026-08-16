@@ -290,19 +290,19 @@ export const CERTS = [
     title: { en: "Claude Code in Action", es: "Claude Code in Action" },
     org: "Anthropic",
     status: "done" as const,
-    url: null,
+    url: "https://verify.skilljar.com/c/qh85vsb8bzfr",
   },
   {
     title: { en: "Claude Code 101", es: "Claude Code 101" },
     org: "Anthropic",
     status: "done" as const,
-    url: null,
+    url: "https://verify.skilljar.com/c/8jzh253kuxde",
   },
   {
     title: { en: "Introduction to Model Context Protocol", es: "Introducción a Model Context Protocol" },
     org: "Anthropic",
     status: "done" as const,
-    url: null,
+    url: "https://verify.skilljar.com/c/fsk4horbo8af",
   },
   {
     title: { en: "Complete Web & Mobile Designer: UI/UX, Figma +more", es: "Diseñador Web & Mobile Completo: UI/UX, Figma y más" },
