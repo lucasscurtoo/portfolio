@@ -45,7 +45,8 @@ export default function Education() {
             <div className="flex flex-col gap-3.5">
               {CERTS.map((cert, i) => {
                 const panel = (
-                  <Panel interactive className="grid grid-cols-[24px_1fr_auto] gap-3.5 items-center px-5 py-4">
+                  <Panel interactive className="px-5 py-4">
+                    <div className="grid grid-cols-[24px_1fr_auto] gap-3.5 items-center">
                     <div className="flex-shrink-0">
                       {cert.status === "done" ? (
                         <span className="w-[22px] h-[22px] bg-[var(--accent)] grid place-items-center">
@@ -75,6 +76,7 @@ export default function Education() {
                         ? lang === "en" ? "Done" : "Completado"
                         : lang === "en" ? "In Progress" : "En progreso"}
                     </span>
+                    </div>
                   </Panel>
                 );
                 return (
