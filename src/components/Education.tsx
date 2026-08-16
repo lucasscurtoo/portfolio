@@ -43,8 +43,8 @@ export default function Education() {
               {COPY.certs.title[lang]}
             </div>
             <div className="flex flex-col gap-3.5">
-              {CERTS.map((cert, i) => {
-                const panel = (
+              {CERTS.map((cert, i) => (
+                <Reveal key={i} delay={i * 0.08}>
                   <Panel interactive className="px-5 py-4">
                     <div className="grid grid-cols-[24px_1fr_auto] gap-3.5 items-center">
                     <div className="flex-shrink-0">
@@ -64,31 +64,27 @@ export default function Education() {
                       <p className="text-[14.5px] font-medium leading-[1.35] text-[var(--text)]">{cert.title[lang]}</p>
                       <p className="text-[12px] text-[var(--faint)] mt-0.5">{cert.org}</p>
                     </div>
-                    <span
-                      className={[
-                        "font-mono text-[9.5px] uppercase tracking-[0.1em] px-2 py-1 whitespace-nowrap border",
-                        cert.status === "done"
-                          ? "border-[var(--accent)] text-[var(--accent-safe)]"
-                          : "border-[var(--border)] text-[var(--faint)]",
-                      ].join(" ")}
-                    >
-                      {cert.status === "done"
-                        ? lang === "en" ? "Done" : "Completado"
-                        : lang === "en" ? "In Progress" : "En progreso"}
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <span className="font-mono text-[9.5px] uppercase tracking-[0.1em] whitespace-nowrap text-[var(--faint)]">
+                        {cert.status === "done"
+                          ? lang === "en" ? "Done" : "Completado"
+                          : lang === "en" ? "In Progress" : "En progreso"}
+                      </span>
+                      {cert.url && (
+                        <a
+                          href={cert.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-mono text-[9.5px] uppercase tracking-[0.1em] px-2 py-1 whitespace-nowrap border border-[var(--accent)] text-[var(--accent-safe)] transition-colors hover:bg-[var(--accent)] hover:text-[var(--accent-text)]"
+                        >
+                          {lang === "en" ? "View ↗" : "Ver ↗"}
+                        </a>
+                      )}
+                    </div>
                     </div>
                   </Panel>
-                );
-                return (
-                  <Reveal key={i} delay={i * 0.08}>
-                    {cert.url ? (
-                      <a href={cert.url} target="_blank" rel="noopener noreferrer">{panel}</a>
-                    ) : (
-                      panel
-                    )}
-                  </Reveal>
-                );
-              })}
+                </Reveal>
+              ))}
             </div>
           </div>
         </div>
