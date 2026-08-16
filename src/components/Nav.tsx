@@ -31,6 +31,10 @@ export default function Nav() {
   const { theme, toggle: toggleTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  // SSR renders the default theme; only trust `theme` after mount to avoid a hydration mismatch
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const isDark = mounted ? theme === "dark" : true;
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 30);
@@ -89,9 +93,9 @@ export default function Nav() {
           <button
             onClick={toggleTheme}
             className="w-[32px] h-[32px] grid place-items-center text-[var(--muted)] border border-transparent hover:text-[var(--accent)] hover:border-[var(--border)] transition-all duration-200"
-            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
-            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+            {isDark ? <SunIcon /> : <MoonIcon />}
           </button>
           <button
             onClick={toggle}
@@ -116,9 +120,9 @@ export default function Nav() {
           <button
             onClick={toggleTheme}
             className="w-[34px] h-[34px] grid place-items-center text-[var(--muted)] hover:text-[var(--accent)] transition-all"
-            aria-label={theme === "dark" ? "Light mode" : "Dark mode"}
+            aria-label={isDark ? "Light mode" : "Dark mode"}
           >
-            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+            {isDark ? <SunIcon /> : <MoonIcon />}
           </button>
           <button
             onClick={toggle}

@@ -29,6 +29,12 @@ export default function Decrypt({ text, className = "", speed = 28, onView = tru
 
   useEffect(() => setMounted(true), []);
 
+  // re-sync when the text changes (e.g. language toggle) and allow a re-scramble
+  useEffect(() => {
+    setDisplay(text);
+    done.current = false;
+  }, [text]);
+
   useEffect(() => {
     if (!mounted || reduce || done.current) return;
 

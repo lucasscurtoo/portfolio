@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Reveal from "./Reveal";
 import SectionHeader from "./ui/SectionHeader";
 import Panel from "./ui/Panel";
@@ -12,6 +12,9 @@ import { LOCAL_ICONS, BrandIcon } from "@/lib/brand-icons";
 function SkillIcon({ slug, name, size = 15 }: { slug: string | null; name: string; size?: number }) {
   const { theme } = useTheme();
   const [failed, setFailed] = useState(!slug);
+  // SSR renders the default (dark) icon color; trust `theme` only after mount to avoid a hydration mismatch
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   // brands Simple Icons dropped (e.g. AWS) — render local, currentColor = themed
   if (slug && LOCAL_ICONS[slug]) return <BrandIcon path={LOCAL_ICONS[slug]} size={size} />;
@@ -28,7 +31,7 @@ function SkillIcon({ slug, name, size = 15 }: { slug: string | null; name: strin
     );
   }
   // theme-aware icon color (light icons on dark, dark icons on light)
-  const hex = theme === "light" ? "44484f" : "c9d1d9";
+  const hex = mounted && theme === "light" ? "44484f" : "c9d1d9";
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
