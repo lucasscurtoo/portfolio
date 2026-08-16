@@ -44,7 +44,7 @@ export default function Experience() {
                     <h3 className="font-display uppercase text-[22px] leading-none text-[var(--text)]">
                       {job.role[lang]}{" "}
                       <span className="text-[var(--faint)]">@</span>{" "}
-                      <span className="text-[var(--accent-safe)]">{job.company}</span>
+                      <span className="text-[var(--accent-safe)]">{typeof job.company === "string" ? job.company : job.company[lang]}</span>
                     </h3>
                     <span className="flex items-center gap-2 font-mono text-[11.5px] text-[var(--muted)] whitespace-nowrap uppercase tracking-[0.06em]">
                       {job.current && (

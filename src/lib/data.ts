@@ -205,24 +205,46 @@ export const SKILLS = [
 
 export const EXPERIENCE = [
   {
-    role: { en: "Mid-level Software Developer", es: "Desarrollador de Software Semi-Senior" },
+    role: { en: "Founder & Solo Developer (AI side projects)", es: "Founder & Solo Developer (proyectos de IA)" },
+    company: { en: "Self-employed", es: "Autónomo" },
+    period: { en: "Aug 2025 — Present", es: "Ago 2025 — Presente" },
+    current: true,
+    points: {
+      en: [
+        "Built an early-stage conversational-AI voice platform powered by ElevenLabs: SIP telephony and embeddable web widgets, with a WhatsApp channel in development.",
+        "Built an AI-powered order-taking platform with conversational text-based ordering.",
+        "Both developed end to end: NestJS, Next.js, PostgreSQL, Docker — deployed on my own infrastructure.",
+      ],
+      es: [
+        "Construí una plataforma de voz con IA conversacional sobre ElevenLabs: telefonía SIP y widgets web embebibles, con canal de WhatsApp en desarrollo.",
+        "Construí una plataforma de toma de pedidos con IA, con pedidos conversacionales por texto.",
+        "Ambas desarrolladas de punta a punta: NestJS, Next.js, PostgreSQL, Docker — desplegadas en infraestructura propia.",
+      ],
+    },
+  },
+  {
+    role: { en: "Full-Stack Developer", es: "Desarrollador Full-Stack" },
     company: "Global Assist",
     period: { en: "Aug 2024 — Present", es: "Ago 2024 — Presente" },
     current: true,
     points: {
       en: [
+        "Sole developer owning 2 production applications end to end — architecture, backend, frontend, infrastructure and deployments — plus a mobile app in development.",
         "Migrated the entire backend architecture to DDD — making a legacy system maintainable and extensible.",
         "Built a parallel MongoDB database to handle sessions and real-time notifications without loading the main system.",
+        "Designed and built the company's internal enterprise system, improving day-to-day operations.",
         "Replaced the old component library with shadcn/ui and rebuilt dynamic dashboards with NestJS + React + WebSockets.",
         "Implemented backend monitoring with Prometheus via interceptors.",
-        "Owned deployment: EC2, Secrets Manager, Docker, Dokploy — zero-downtime pipelines.",
+        "Owned AWS infrastructure (EC2, Secrets Manager, SES) and deployment with Docker and Dokploy — zero-downtime pipelines.",
       ],
       es: [
+        "Único desarrollador a cargo de 2 aplicaciones en producción de punta a punta — arquitectura, backend, frontend, infraestructura y deploys — más una app mobile en desarrollo.",
         "Migré toda la arquitectura backend a DDD — convirtiendo un sistema legacy en algo mantenible y extensible.",
         "Construí una base de datos paralela en MongoDB para manejar sesiones y notificaciones en tiempo real sin cargar el sistema principal.",
+        "Diseñé y construí el sistema interno de gestión de la empresa, mejorando la operativa diaria.",
         "Reemplacé la librería de componentes con shadcn/ui y reconstruí dashboards dinámicos con NestJS + React + WebSockets.",
         "Implementé monitoreo del backend con Prometheus mediante interceptors.",
-        "Lideré el deploy completo: EC2, Secrets Manager, Docker, Dokploy — pipelines sin downtime.",
+        "Manejé la infraestructura AWS (EC2, Secrets Manager, SES) y el deploy con Docker y Dokploy — pipelines sin downtime.",
       ],
     },
   },
