@@ -122,6 +122,22 @@ export const PROJECTS = [
     featured: true,
   },
   {
+    name: "Grace Group",
+    tagline: {
+      en: "Coaching membership platform — subscriptions, campus & admin",
+      es: "Plataforma de membresías de coaching — suscripciones, campus y admin",
+    },
+    description: {
+      en: "Full membership platform for a coaching business, built solo end to end and live in production. Recurring subscriptions with MercadoPago (3 tiers), members-only campus with courses and live sessions, and a full admin panel: content, members, email campaigns and session reminders via cron. Clerk auth, PostgreSQL with Prisma, media on Cloudflare R2, transactional email with Resend.",
+      es: "Plataforma de membresías completa para un negocio de coaching, construida solo de punta a punta y en producción. Suscripciones recurrentes con MercadoPago (3 planes), campus exclusivo para miembros con cursos y sesiones en vivo, y panel de admin completo: contenido, miembros, campañas de email y recordatorios de sesiones por cron. Auth con Clerk, PostgreSQL con Prisma, media en Cloudflare R2, emails transaccionales con Resend.",
+    },
+    tags: ["Next.js", "PostgreSQL", "Prisma", "MercadoPago", "Clerk", "Cloudflare R2"],
+    url: "https://gracegroup.org",
+    github: null,
+    type: { en: "Client · Live", es: "Cliente · Publicado" },
+    featured: true,
+  },
+  {
     name: "CRM Platform",
     tagline: {
       en: "Multiple CRMs built — Meta & WhatsApp integrations",
