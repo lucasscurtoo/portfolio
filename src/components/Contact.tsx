@@ -11,8 +11,7 @@ import { PROFILE, COPY } from "@/lib/data";
 const LINKS = [
   { key: "email" as const, cmd: "mail", value: PROFILE.email, href: `mailto:${PROFILE.email}` },
   { key: "linkedin" as const, cmd: "open", value: "linkedin.com/in/lucas-curto", href: PROFILE.linkedin },
-  { key: "github" as const, cmd: "clone", value: "github.com/lucascurto", href: PROFILE.github },
-  { key: "phone" as const, cmd: "call", value: PROFILE.phone, href: `tel:${PROFILE.phone.replace(/\s/g, "")}` },
+  { key: "github" as const, cmd: "clone", value: "github.com/lucasscurtoo", href: PROFILE.github },
 ];
 
 export default function Contact() {

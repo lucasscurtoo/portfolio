@@ -8,7 +8,6 @@ export const PROFILE = {
   email: "lucascurtoo@gmail.com",
   linkedin: "https://www.linkedin.com/in/lucas-curto/",
   github: "https://github.com/lucasscurtoo",
-  phone: "+598 91886037",
   tagline: {
     en: "I own the backend. I ship the frontend. I run the infra — NestJS, Next.js, AWS. One developer, end to end.",
     es: "Domino el backend. Construyo el frontend. Manejo la infra — NestJS, Next.js, AWS. Un desarrollador, de punta a punta.",
@@ -411,7 +410,6 @@ export const COPY = {
       email: { en: "Send an email", es: "Enviar un email" },
       linkedin: { en: "Connect on LinkedIn", es: "Conectar en LinkedIn" },
       github: { en: "View GitHub", es: "Ver GitHub" },
-      phone: { en: "Call / WhatsApp", es: "Llamar / WhatsApp" },
     },
   },
   footer: {
