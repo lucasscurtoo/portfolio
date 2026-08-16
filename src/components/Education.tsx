@@ -43,8 +43,8 @@ export default function Education() {
               {COPY.certs.title[lang]}
             </div>
             <div className="flex flex-col gap-3.5">
-              {CERTS.map((cert, i) => (
-                <Reveal key={i} delay={i * 0.08}>
+              {CERTS.map((cert, i) => {
+                const panel = (
                   <Panel interactive className="grid grid-cols-[24px_1fr_auto] gap-3.5 items-center px-5 py-4">
                     <div className="flex-shrink-0">
                       {cert.status === "done" ? (
@@ -76,8 +76,17 @@ export default function Education() {
                         : lang === "en" ? "In Progress" : "En progreso"}
                     </span>
                   </Panel>
-                </Reveal>
-              ))}
+                );
+                return (
+                  <Reveal key={i} delay={i * 0.08}>
+                    {cert.url ? (
+                      <a href={cert.url} target="_blank" rel="noopener noreferrer">{panel}</a>
+                    ) : (
+                      panel
+                    )}
+                  </Reveal>
+                );
+              })}
             </div>
           </div>
         </div>

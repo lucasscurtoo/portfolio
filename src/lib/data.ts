@@ -265,19 +265,40 @@ export const EDUCATION = [
 
 export const CERTS = [
   {
-    title: { en: "Software Development Internship Completion", es: "Finalización de Pasantía en Desarrollo de Software" },
-    org: "Moove-it",
+    title: { en: "NestJS + Microservices: Scalable & Modular Applications", es: "NestJS + Microservicios: Aplicaciones escalables y modulares" },
+    org: "Udemy · DevTalles",
     status: "done" as const,
+    url: "https://ude.my/UC-fbf47543-bf67-49c5-8207-3597f18cc705",
+  },
+  {
+    title: { en: "Claude Code in Action", es: "Claude Code in Action" },
+    org: "Anthropic",
+    status: "done" as const,
+    url: null,
+  },
+  {
+    title: { en: "Claude Code 101", es: "Claude Code 101" },
+    org: "Anthropic",
+    status: "done" as const,
+    url: null,
+  },
+  {
+    title: { en: "Introduction to Model Context Protocol", es: "Introducción a Model Context Protocol" },
+    org: "Anthropic",
+    status: "done" as const,
+    url: null,
   },
   {
     title: { en: "Complete Web & Mobile Designer: UI/UX, Figma +more", es: "Diseñador Web & Mobile Completo: UI/UX, Figma y más" },
     org: "Udemy",
     status: "done" as const,
+    url: "https://ude.my/UC-7cec8111-768a-48ec-9bf1-8287ba9af6af",
   },
   {
-    title: { en: "Microservices Architecture & Implementation", es: "Arquitectura e Implementación de Microservicios" },
-    org: "Udemy",
-    status: "progress" as const,
+    title: { en: "Software Development Internship Completion", es: "Finalización de Pasantía en Desarrollo de Software" },
+    org: "Moove-it",
+    status: "done" as const,
+    url: null,
   },
 ];
 
